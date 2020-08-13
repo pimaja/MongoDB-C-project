@@ -1,0 +1,106 @@
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\bin\Debug\Fakultet.exe.config
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\bin\Debug\Fakultet.exe
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\bin\Debug\Fakultet.pdb
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\bin\Debug\MongoDB.Bson.dll
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\bin\Debug\MongoDB.Bson.xml
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\obj\Debug\Fakultet.csprojAssemblyReference.cache
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\obj\Debug\Fakultet.Forma5.resources
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\obj\Debug\Fakultet.Properties.Resources.resources
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\obj\Debug\Fakultet.csproj.GenerateResource.cache
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\obj\Debug\Fakultet.csproj.CopyComplete
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\obj\Debug\Fakultet.exe
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\obj\Debug\Fakultet.pdb
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\bin\Debug\mongocrypt.dll
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\bin\Debug\Crc32C.NET.dll
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\bin\Debug\DnsClient.dll
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\bin\Debug\MongoDB.Driver.dll
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\bin\Debug\MongoDB.Libmongocrypt.dll
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\bin\Debug\SharpCompress.dll
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\bin\Debug\Snappy.NET.dll
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\bin\Debug\System.Buffers.dll
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\bin\Debug\Crc32C.NET.xml
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\bin\Debug\DnsClient.xml
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\bin\Debug\MongoDB.Driver.xml
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\bin\Debug\Snappy.NET.xml
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\bin\Debug\System.Buffers.xml
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\obj\Debug\Fakultet.Pregled_po_studentima.resources
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\obj\Debug\Fakultet.Dodaj_novi_ispit.resources
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\obj\Debug\Fakultet.FormIspisIspitaZaStudenta.resources
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\obj\Debug\Fakultet.FormIspisKolegijaNastavnika.resources
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\obj\Debug\Fakultet.FormPocetna.resources
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\obj\Debug\Fakultet.FormIspisKolegija.resources
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\obj\Debug\Fakultet.Forma8.resources
+C:\Users\Mia\Desktop\Faks\RACUNARSTVO 2019_2020\2. SEMESTAR\Napredne baze podataka\projekt\Fakultet\obj\Debug\Fakultet.Forma4.resources
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\bin\Debug\mongocrypt.dll
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\bin\Debug\Fakultet.exe.config
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\bin\Debug\Fakultet.exe
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\bin\Debug\Fakultet.pdb
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\bin\Debug\Crc32C.NET.dll
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\bin\Debug\DnsClient.dll
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\bin\Debug\MongoDB.Bson.dll
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\bin\Debug\MongoDB.Driver.dll
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\bin\Debug\MongoDB.Libmongocrypt.dll
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\bin\Debug\SharpCompress.dll
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\bin\Debug\Snappy.NET.dll
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\bin\Debug\System.Buffers.dll
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\bin\Debug\Crc32C.NET.xml
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\bin\Debug\DnsClient.xml
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\bin\Debug\MongoDB.Bson.xml
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\bin\Debug\MongoDB.Driver.xml
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\bin\Debug\Snappy.NET.xml
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\bin\Debug\System.Buffers.xml
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\obj\Debug\Fakultet.csprojAssemblyReference.cache
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\obj\Debug\Fakultet.Forma4.resources
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\obj\Debug\Fakultet.Forma8.resources
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\obj\Debug\Fakultet.FormIspisIspitaZaStudenta.resources
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\obj\Debug\Fakultet.FormIspisKolegijaNastavnika.resources
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\obj\Debug\Fakultet.FormPocetna.resources
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\obj\Debug\Fakultet.FormIspisKolegija.resources
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\obj\Debug\Fakultet.Forma5.resources
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\obj\Debug\Fakultet.Pregled_po_studentima.resources
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\obj\Debug\Fakultet.Dodaj_novi_ispit.resources
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\obj\Debug\Fakultet.Properties.Resources.resources
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\obj\Debug\Fakultet.csproj.GenerateResource.cache
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\obj\Debug\Fakultet.csproj.CopyComplete
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\obj\Debug\Fakultet.exe
+C:\Users\Mia\Desktop\faks\napredneBazePodataka\Fakultet\obj\Debug\Fakultet.pdb
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\bin\Debug\mongocrypt.dll
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\bin\Debug\Fakultet.exe.config
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\bin\Debug\Fakultet.exe
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\bin\Debug\Fakultet.pdb
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\bin\Debug\Crc32C.NET.dll
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\bin\Debug\DnsClient.dll
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\bin\Debug\MongoDB.Bson.dll
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\bin\Debug\MongoDB.Driver.dll
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\bin\Debug\MongoDB.Libmongocrypt.dll
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\bin\Debug\SharpCompress.dll
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\bin\Debug\Snappy.NET.dll
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\bin\Debug\System.Buffers.dll
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\bin\Debug\Crc32C.NET.xml
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\bin\Debug\DnsClient.xml
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\bin\Debug\MongoDB.Bson.xml
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\bin\Debug\MongoDB.Driver.xml
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\bin\Debug\Snappy.NET.xml
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\bin\Debug\System.Buffers.xml
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\obj\Debug\Fakultet.csprojAssemblyReference.cache
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\obj\Debug\Fakultet.Forma4.resources
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\obj\Debug\Fakultet.Forma8.resources
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\obj\Debug\Fakultet.FormIspisIspitaZaStudenta.resources
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\obj\Debug\Fakultet.FormIspisKolegijaNastavnika.resources
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\obj\Debug\Fakultet.FormPocetna.resources
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\obj\Debug\Fakultet.FormIspisKolegija.resources
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\obj\Debug\Fakultet.Forma5.resources
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\obj\Debug\Fakultet.Pregled_po_studentima.resources
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\obj\Debug\Fakultet.Dodaj_novi_ispit.resources
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\obj\Debug\Fakultet.Properties.Resources.resources
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\obj\Debug\Fakultet.csproj.GenerateResource.cache
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\obj\Debug\Fakultet.csproj.CoreCompileInputs.cache
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\obj\Debug\Fakultet.csproj.CopyComplete
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\obj\Debug\Fakultet.exe
+C:\Users\majap\Desktop\Napredne baze podataka\PROJEKT\Projekt\Fakultet\Fakultet\obj\Debug\Fakultet.pdb
