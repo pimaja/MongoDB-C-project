@@ -1,0 +1,1900 @@
+//template za agregat kolekcije Kolegij
+db.kolegiji.insert(
+{
+   "isvu_sifra": ,
+   "naziv": "",
+   "semestar": "",
+   "ects_bodovi": 5,
+   "izborna_grupa": "",
+   "nositelj": "",
+   "nositelj_oib": 12345678911,
+   "nastavni_sadrzaji": "",
+   "ispiti": [
+      { 
+	    "ispit_id": ,    //1
+		"datum_odrzavanja": "",
+		"vrijeme_odrzavanja": "",
+		"prijava_do": "",   
+		"odjava_do": "",    
+		"nacin_polaganja": "",
+		"sadrzaj": "", //recenica opisa
+		"trajanje": "",   //usmeno/pismeno
+		"predavaonica": ""
+	  },
+	  { 
+	    "ispit_id": ,    //2
+		"datum_odrzavanja": "", 
+		"vrijeme_odrzavanja": "",
+		"prijava_do": "",   
+		"odjava_do": "",    //2 dana prije
+		"nacin_polaganja": "",
+		"sadrzaj": "", //recenica opisa
+		"trajanje": "",   //usmeno/pismeno
+		"predavaonica": ""
+	  },
+	  { 
+	    "ispit_id": ,    //3
+		"datum_odrzavanja": "", 
+		"vrijeme_odrzavanja": "",
+		"prijava_do": "",   
+		"odjava_do": "",    
+		"nacin_polaganja": "",
+		"sadrzaj": "", //recenica opisa
+		"trajanje": "",   //usmeno/pismeno
+		"predavaonica": ""
+	  },  
+   ]
+}
+)
+
+//1.kolegij: Građa računala - ljetni
+db.kolegiji.insert(
+{
+   "isvu_sifra": 92978,
+   "naziv": "Građa računala",
+   "semestar": "ljetni",
+   "ects_bodovi": 5,
+   "izborna_grupa": "ne",
+   "nositelj": "Slobodan Ribarić",
+   "nositelj_oib": 87920272420,
+   "nastavni_sadrzaji": "Von Neumannov model računala. Značajke CISC i RISC arhitekture.",
+   "ispiti": [
+      { 
+	    "ispit_id": 929781,    
+		"datum_odrzavanja": "2020-04-30", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-04-25",   
+		"odjava_do": "2020-04-28",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Provjera znanja zaključno s cjelinom virtualne memorije.", 
+		"trajanje": "120",
+		"predavaonica": "A101"
+	  },
+	  { 
+	    "ispit_id": 929782,   
+		"datum_odrzavanja": "2020-06-26", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-06-21", 
+		"odjava_do": "2020-06-24",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Provjera usvojenog znanja zaključno s RISC arhitekturom.", 
+		"trajanje": "120",  
+		"predavaonica": "A101"
+	  },
+	  { 
+	    "ispit_id": 929783,   
+		"datum_odrzavanja": "2020-07-15", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-07-10",  
+		"odjava_do": "2020-07-13",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Usmena provjera cjelokupnog gradiva.",
+		"trajanje": "20",   
+		"predavaonica": "A206"
+	  }
+   ]
+}
+)
+
+
+//2.kolegij: Oblikovanje i analiza algoritama - zimski
+db.kolegiji.insert(
+{
+   "isvu_sifra": 92979,
+   "naziv": "Oblikovanje i analiza algoritama",
+   "semestar": "zimski",
+   "ects_bodovi": 5,
+   "izborna_grupa": "ne",
+   "nositelj": "Saša Singer",
+   "nositelj_oib": 20335798653,
+   "nastavni_sadrzaji": "Pojam složenosti algoritma. Prosječna složenost Quicksort-a.",
+   "ispiti": [
+      { 
+	    "ispit_id": 929791,    
+		"datum_odrzavanja": "2019-11-29", 
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2019-11-25",   
+		"odjava_do": "2019-11-27",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Provjera usvojenog znanja prvog dijela gradiva.", 
+		"trajanje": "120",
+		"predavaonica": "A201"
+	  },
+	  { 
+	    "ispit_id": 929792,   
+		"datum_odrzavanja": "2020-02-07", 
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2020-02-02", 
+		"odjava_do": "2020-02-04",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Provjera usvojenog znanja drugog dijela gradiva.", 
+		"trajanje": "120",  
+		"predavaonica": "A201"
+	  },
+	  { 
+	    "ispit_id": 929793,   
+		"datum_odrzavanja": "2020-02-14",
+		"vrijeme_odrzavanja": "10",		
+		"prijava_do": "2020-02-09",  
+		"odjava_do": "2020-02-12",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Predaja i obrana domaće zadaće.",
+		"trajanje": "15",   
+		"predavaonica": "A306"
+	  }
+   ]
+}
+)
+
+
+//3.kolegij: Umjetna inteligencija - zimski
+db.kolegiji.insert(
+{
+   "isvu_sifra": 45688,
+   "naziv": "Umjetna inteligencija",
+   "semestar": "zimski",
+   "ects_bodovi": 5,
+   "izborna_grupa": "ne",
+   "nositelj": "Luka Grubišić",
+   "nositelj_oib": 26559220386,
+   "nastavni_sadrzaji": "Definicija inteligentnog sustava. Produkcijska pravila.",
+   "ispiti": [
+      { 
+	    "ispit_id": 456881,    
+		"datum_odrzavanja": "2019-11-25",
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2019-11-20",   
+		"odjava_do": "2019-11-23",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Provjera usvojenog znanja od 1. do 3.cjeline.", 
+		"trajanje": "120",
+		"predavaonica": "003"
+	  },
+	  { 
+	    "ispit_id": 456882,   
+		"datum_odrzavanja": "2020-02-03",
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2020-01-28", 
+		"odjava_do": "2020-02-01",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Provjera usvojenog znanja od 4. do 8.cjeline.", 
+		"trajanje": "120",  
+		"predavaonica": "003"
+	  },
+	  { 
+	    "ispit_id": 456883,   
+		"datum_odrzavanja": "2020-02-13", 
+		"vrijeme_odrzavanja": "11",
+		"prijava_do": "2020-02-08",  
+		"odjava_do": "2020-02-11",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Usmena provjera cjelokupnog gradiva i obrana projektnog zadatka.",
+		"trajanje": "15",   
+		"predavaonica": "A302"
+	  }
+   ]
+}
+)
+
+
+//4.kolegij: Matematička logika - zimski
+db.kolegiji.insert(
+{
+   "isvu_sifra": 45689,
+   "naziv": "Matematička logika",
+   "semestar": "zimski",
+   "ects_bodovi": 5,
+   "izborna_grupa": "ne",
+   "nositelj": "Mladen Vuković",
+   "nositelj_oib": 83712854685,
+   "nastavni_sadrzaji": "Klasična logika sudova. Logika prvog reda.",
+   "ispiti": [
+      { 
+	    "ispit_id": 456891,    
+		"datum_odrzavanja": "2019-11-29", 
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2019-11-24",   
+		"odjava_do": "2019-11-27",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Pismena provjera: Klasična logika sudova.", 
+		"trajanje": "120",
+		"predavaonica": "110"
+	  },
+	  { 
+	    "ispit_id": 456892,   
+		"datum_odrzavanja": "2020-02-07",
+        "vrijeme_odrzavanja": "15",		
+		"prijava_do": "2020-02-02", 
+		"odjava_do": "2020-02-05",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Pismena provjera: Logika prvog reda.", 
+		"trajanje": "120",  
+		"predavaonica": "110"
+	  },
+	  { 
+	    "ispit_id": 456893,   
+		"datum_odrzavanja": "2020-02-17", 
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2020-02-12",  
+		"odjava_do": "2020-02-15",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Usmeni ispit cjelokupnog gradiva.",
+		"trajanje": "30",   
+		"predavaonica": "A306"
+	  }
+   ]
+}
+)
+
+
+//5.kolegij: Mreže računala - zimski
+db.kolegiji.insert(
+{
+   "isvu_sifra": 92949,
+   "naziv": "Mreže računala",
+   "semestar": "zimski",
+   "ects_bodovi": 5,
+   "izborna_grupa": "ne",
+   "nositelj": "Luka Grubišić",
+   "nositelj_oib": 26559220386,
+   "nastavni_sadrzaji": "Komunikacije i umrežavanje. Upravljanje mrežom. Multimedija.",
+   "ispiti": [
+      { 
+	    "ispit_id": 929491,    
+		"datum_odrzavanja": "2019-11-25", 
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2019-11-20",   
+		"odjava_do": "2019-11-23",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Pismena provjera prvog dijela gradiva - do cjeline Upravljanje mrežom.", 
+		"trajanje": "120",
+		"predavaonica": "101"
+	  },
+	  { 
+	    "ispit_id": 929492,   
+		"datum_odrzavanja": "2020-02-05", 
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2020-02-01", 
+		"odjava_do": "2020-02-03",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Pismena provjera drugog dijela gradiva.", 
+		"trajanje": "120",  
+		"predavaonica": "110"
+	  },
+	  { 
+	    "ispit_id": 929493,   
+		"datum_odrzavanja": "2020-02-17", 
+		"vrijeme_odrzavanja": "10",
+		"prijava_do": "2020-02-12",  
+		"odjava_do": "2020-02-16",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Kratka usmena provjera gradiva.",
+		"trajanje": "15",   
+		"predavaonica": "A203"
+	  }
+   ]
+}
+)
+
+
+//6.kolegij: Operacijski sustavi - ljetni
+db.kolegiji.insert(
+{
+   "isvu_sifra": 45691,
+   "naziv": "Operacijski sustavi",
+   "semestar": "ljetni",
+   "ects_bodovi": 5,
+   "izborna_grupa": "ne",
+   "nositelj": "Leonardo Jelenković",
+   "nositelj_oib": 39259887219,
+   "nastavni_sadrzaji": "Slojevita hijerarhijska struktura operacijskih sustava. Prekidni način rada.",
+   "ispiti": [
+      { 
+	    "ispit_id": 456911,    
+		"datum_odrzavanja": "2020-04-30",
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-04-25",   
+		"odjava_do": "2020-04-27",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Pismena provjera gradiva, sinkronizacija dretvi uključena.", 
+		"trajanje": "90",
+		"predavaonica": "201"
+	  },
+	  { 
+	    "ispit_id": 456912,   
+		"datum_odrzavanja": "2020-06-26",
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-06-21", 
+		"odjava_do": "2020-06-24",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Pismena provjera cjelokupnog gradiva.", 
+		"trajanje": "90",  
+		"predavaonica": "201"
+	  },
+	  { 
+	    "ispit_id": 456913,   
+		"datum_odrzavanja": "2020-07-06", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-07-01",  
+		"odjava_do": "2020-07-04",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Usmena provjera znanja. Obrana domaćih zadaća po potrebi.",
+		"trajanje": "25",   
+		"predavaonica": "A101"
+	  }
+   ]
+}
+)
+
+
+//7.kolegij: Interpretacija programa - ljetni
+db.kolegiji.insert(
+{
+   "isvu_sifra": 61519,
+   "naziv": "Interpretacija programa",
+   "semestar": "ljetni",
+   "ects_bodovi": 5,
+   "izborna_grupa": "ne",
+   "nositelj": "Marko Horvat",
+   "nositelj_oib": 62396901802,
+   "nastavni_sadrzaji": "Sintaktička analiza. Među-jezici i virtualni strojevi.",
+   "ispiti": [
+      { 
+	    "ispit_id": 615191,    
+		"datum_odrzavanja": "2020-04-24", 
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2020-04-19",   
+		"odjava_do": "2020-04-22",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Pismena provjera teorijskog dijela gradiva.", 
+		"trajanje": "120",
+		"predavaonica": "004"
+	  },
+	  { 
+	    "ispit_id": 615192,   
+		"datum_odrzavanja": "2020-06-23", 
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2020-06-18", 
+		"odjava_do": "2020-06-21",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Pismena provjera praktičnog dijela gradiva. Open book.", 
+		"trajanje": "180",  
+		"predavaonica": "PR4"
+	  },
+	  { 
+	    "ispit_id": 615193,   
+		"datum_odrzavanja": "2020-07-09",
+		"vrijeme_odrzavanja": "11",
+		"prijava_do": "2020-07-04",  
+		"odjava_do": "2020-07-07",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Usmena provjera teorijskog dijela kolegija.",
+		"trajanje": "20",   
+		"predavaonica": "A308"
+	  }
+   ]
+}
+)
+
+
+//8.kolegij: Baze podataka - ljetni
+db.kolegiji.insert(
+{
+   "isvu_sifra": 45693,
+   "naziv": "Baze podataka",
+   "semestar": "ljetni",
+   "ects_bodovi": 4,
+   "izborna_grupa": "ne",
+   "nositelj": "Robert Manger",
+   "nositelj_oib": 58672041093,
+   "nastavni_sadrzaji": "Konceptualno oblikovanje baze podataka. Relacijski model i normalizacija.",
+   "ispiti": [
+      { 
+	    "ispit_id": 456931,    
+		"datum_odrzavanja": "2020-04-20", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-04-15",   
+		"odjava_do": "2020-04-18",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Pismena provjera teorijskog dijela gradiva.", 
+		"trajanje": "120",
+		"predavaonica": "003"
+	  },
+	  { 
+	    "ispit_id": 456932,   
+		"datum_odrzavanja": "2020-06-15", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-06-09", 
+		"odjava_do": "2020-06-13",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Provjera praktičnog dijela gradiva, naglasak na normalizaciji podataka.", 
+		"trajanje": "120",  
+		"predavaonica": "PR4"
+	  },
+	  { 
+	    "ispit_id": 456933,   
+		"datum_odrzavanja": "2020-07-10",
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2020-06-30",  
+		"odjava_do": "2020-07-02",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Usmeni ispit, komentiranje domaće zadaće.",
+		"trajanje": "15",   
+		"predavaonica": "A102"
+	  }
+   ]
+}
+)
+
+
+//9.kolegij: Objektno programiranje - ljetni
+db.kolegiji.insert(
+{
+   "isvu_sifra": 45694,
+   "naziv": "Objektno programiranje",
+   "semestar": "ljetni",
+   "ects_bodovi": 6,
+   "izborna_grupa": "ne",
+   "nositelj": "Mladen Jurak",
+   "nositelj_oib": 79820572417,
+   "nastavni_sadrzaji": "C++, objekti, klase, nasljeđivanje, agregacija, polimorfizam.",
+   "ispiti": [
+      { 
+	    "ispit_id": 456941,    
+		"datum_odrzavanja": "2020-04-27", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-04-23",   
+		"odjava_do": "2020-04-25",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Pismeni ispit, naglasak na primjerima (nasljeđivanje i polimorfizam).", 
+		"trajanje": "100",
+		"predavaonica": "006"
+	  },
+	  { 
+	    "ispit_id": 456942,   
+		"datum_odrzavanja": "2020-06-23", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-06-19", 
+		"odjava_do": "2020-06-21",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Provjera usvajanja praktičnog dijela kolegija. Pet zadataka.", 
+		"trajanje": "120",  
+		"predavaonica": "PR2"
+	  },
+	  { 
+	    "ispit_id": 456943,   
+		"datum_odrzavanja": "2020-07-06",
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2020-06-01",  
+		"odjava_do": "2020-07-04",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Usmeni ispit, naglasak na drugom dijelu teorije.",
+		"trajanje": "20",   
+		"predavaonica": "A102"
+	  }
+   ]
+}
+)
+
+
+//10.kolegij: Računarski praktikum 2 - ljetni
+db.kolegiji.insert(
+{
+   "isvu_sifra": 45595,
+   "naziv": "Računarski praktikum 2",
+   "semestar": "ljetni",
+   "ects_bodovi": 6,
+   "izborna_grupa": "ne",
+   "nositelj": "Zvonimir Bujanović",
+   "nositelj_oib": 07186299870,
+   "nastavni_sadrzaji": "Skriptiranje na strani klijenta i servera. HTML forme, PHP, Javascript, JSON, Ajax.",
+   "ispiti": [
+      { 
+	    "ispit_id": 455951,    
+		"datum_odrzavanja": "2020-04-30", 
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2020-04-25",   
+		"odjava_do": "2020-04-28",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Dva zadatka: HTML forme, CSS, PHP.", 
+		"trajanje": "180",
+		"predavaonica": "PR4"
+	  },
+	  { 
+	    "ispit_id": 455952,   
+		"datum_odrzavanja": "2020-06-23", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-06-19", 
+		"odjava_do": "2020-06-21",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Dva zadatka: Javascript i AJAX.", 
+		"trajanje": "180",  
+		"predavaonica": "PR2"
+	  },
+	  { 
+	    "ispit_id": 455953,   
+		"datum_odrzavanja": "2020-07-06",
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2020-06-01",  
+		"odjava_do": "2020-07-04",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Obrana dviju zadaća (jedna po želji studenta, druga po želji profesora).",
+		"trajanje": "20",   
+		"predavaonica": "PR1"
+	  }
+   ]
+}
+)
+
+
+//11.kolegij: Kombinatorika - zimski
+db.kolegiji.insert(
+{
+   "isvu_sifra": 45696,
+   "naziv": "Kombinatorika",
+   "semestar": "zimski",
+   "ects_bodovi": 6,
+   "izborna_grupa": "da",
+   "nositelj": "Vedran Krčadinac",
+   "nositelj_oib": 25534233659,
+   "nastavni_sadrzaji": "Kombinatorna prebrojavanja, Möbiusova inverzija.",
+   "ispiti": [
+      { 
+	    "ispit_id": 456961,    
+		"datum_odrzavanja": "2019-11-18", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2019-11-13",   
+		"odjava_do": "2019-11-15",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Definicije, teoremi i zadatci iz prvog dijela gradiva.", 
+		"trajanje": "120",
+		"predavaonica": "110"
+	  },
+	  { 
+	    "ispit_id": 456962,   
+		"datum_odrzavanja": "2020-01-27", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-01-22", 
+		"odjava_do": "2020-01-25",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Definicije, teoremi i zadatci iz drugog dijela gradiva.", 
+		"trajanje": "120",  
+		"predavaonica": "101"
+	  },
+	  { 
+	    "ispit_id": 456963,   
+		"datum_odrzavanja": "2020-02-10",
+		"vrijeme_odrzavanja": "10",
+		"prijava_do": "2020-02-05",  
+		"odjava_do": "2020-02-08",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Usmeni ispit cjelokupnog gradiva.",
+		"trajanje": "20",   
+		"predavaonica": "A002"
+	  }
+   ]
+}
+)
+
+
+//12.kolegij: Operacijska istraživanja - zimski
+db.kolegiji.insert(
+{
+   "isvu_sifra": 45704,
+   "naziv": "Operacijska istraživanja",
+   "semestar": "zimski",
+   "ects_bodovi": 4,
+   "izborna_grupa": "da",
+   "nositelj": "Marko Vrdoljak",
+   "nositelj_oib": 74869409866,
+   "nastavni_sadrzaji": "Modelski pristup operacijskih istraživanja, problemi transporta,  problemi na mrežama.",
+   "ispiti": [
+      { 
+	    "ispit_id": 457041,    
+		"datum_odrzavanja": "2019-11-29", 
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2019-11-24",   
+		"odjava_do": "2019-11-27",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Tri teoretska zadatka i dva zadatka primjene - prvi dio.", 
+		"trajanje": "120",
+		"predavaonica": "A102"
+	  },
+	  { 
+	    "ispit_id": 457042,   
+		"datum_odrzavanja": "2020-02-07", 
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2020-02-02", 
+		"odjava_do": "2020-02-05",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Tri teoretska zadatka i dva zadatka primjene - drugi dio.", 
+		"trajanje": "120",  
+		"predavaonica": "A102"
+	  },
+	  { 
+	    "ispit_id": 457043,   
+		"datum_odrzavanja": "2020-02-15",
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2020-02-10",  
+		"odjava_do": "2020-02-13",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Kratka usmena provjera, naglasak na teoriji iz pismenih ispita.",
+		"trajanje": "20",   
+		"predavaonica": "A002"
+	  }
+   ]
+}
+)
+
+
+//13.kolegij: Računalna grafika - ljetni
+db.kolegiji.insert(
+{
+   "isvu_sifra": 92953,
+   "naziv": "Računalna grafika",
+   "semestar": "ljetni",
+   "ects_bodovi": 4,
+   "izborna_grupa": "da",
+   "nositelj": "Tina Bosner",
+   "nositelj_oib": 24846031037,
+   "nastavni_sadrzaji": "Rasterska i vektorska grafika, OpenGL, geometrijske transformacije u 2D i 3D, B - splajn krivulje.",
+   "ispiti": [
+      { 
+	    "ispit_id": 929531,    
+		"datum_odrzavanja": "2020-04-20", 
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2020-04-15",   
+		"odjava_do": "2020-04-18",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Prvi zadatak: GLUT procedure, drugi zadatak: 2D/3D transformacije.", 
+		"trajanje": "120",
+		"predavaonica": "PR3"
+	  },
+	  { 
+	    "ispit_id": 929532,   
+		"datum_odrzavanja": "2020-06-14", 
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2020-06-09", 
+		"odjava_do": "2020-06-12",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Prvi zadatak: VD, drugi zadatak: svojstva B-splajnova, treći zadatak: mrežasti modeli ploha.", 
+		"trajanje": "180",  
+		"predavaonica": "PR3"
+	  },
+	  { 
+	    "ispit_id": 929533,   
+		"datum_odrzavanja": "2020-07-06",
+		"vrijeme_odrzavanja": "10",
+		"prijava_do": "2020-06-01",  
+		"odjava_do": "2020-07-04",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Obrana projekta. Svi članovi grupe moraju biti upoznati sa svim sastavnicama projekta.",
+		"trajanje": "30",   
+		"predavaonica": "PR4"
+	  }
+   ]
+}
+)
+
+
+//14.kolegij: Konačne geometrije - ljetni
+db.kolegiji.insert(
+{
+   "isvu_sifra": 92955,
+   "naziv": "Konačne geometrije",
+   "semestar": "ljetni",
+   "ects_bodovi": 6,
+   "izborna_grupa": "da",
+   "nositelj": "Juraj Šiftar",
+   "nositelj_oib": 43510326714,
+   "nastavni_sadrzaji": "Teorije dizajna, s naglaskom na veze sa srodnim geometrijskim, kombinatornim i algebarskim strukturama.",
+   "ispiti": [
+      { 
+	    "ispit_id": 929551,    
+		"datum_odrzavanja": "2020-04-20", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-04-15",   
+		"odjava_do": "2020-04-18",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Tri teorijska zadatka, dva praktična: diferencijski skupovi i Hadamardove matrice.", 
+		"trajanje": "120",
+		"predavaonica": "A001"
+	  },
+	  { 
+	    "ispit_id": 929552,   
+		"datum_odrzavanja": "2020-06-13", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-06-08", 
+		"odjava_do": "2020-06-11",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Tri teorijska zadatka, dva praktična: Steinerovi sistemi trojki i latinski kvadrati.", 
+		"trajanje": "120",  
+		"predavaonica": "A001"
+	  },
+	  { 
+	    "ispit_id": 929553,   
+		"datum_odrzavanja": "2020-07-06",
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2020-06-01",  
+		"odjava_do": "2020-07-04",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Usmeni ispit, dokaz teorema Bruck - Ryser - Chowla za ocjenu odličan.",
+		"trajanje": "20",   
+		"predavaonica": "109"
+	  }
+   ]
+}
+)
+
+
+//15.kolegij: Matematička analiza 1 - zimski
+db.kolegiji.insert(
+{
+   "isvu_sifra": 21498,
+   "naziv": "Matematička analiza 1",
+   "semestar": "zimski",
+   "ects_bodovi": 8,
+   "izborna_grupa": "ne",
+   "nositelj": "Boris Guljaš",
+   "nositelj_oib": 14824362269,
+   "nastavni_sadrzaji": "Skupovi N, Z, Q, svojstva operacija i uređaja. Funkcije. Nizovi. Neprekidnost.",
+   "ispiti": [
+      { 
+	    "ispit_id": 214981,    
+		"datum_odrzavanja": "2019-11-22", 
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2019-11-17",   
+		"odjava_do": "2019-11-20",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Teorija i zadaci - prvih pet cjelina.", 
+		"trajanje": "120",
+		"predavaonica": "003"
+	  },
+	  { 
+	    "ispit_id": 214982,   
+		"datum_odrzavanja": "2020-01-31", 
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2020-01-26", 
+		"odjava_do": "2020-01-29",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Teorija i zadaci - drugih pet cjelina.", 
+		"trajanje": "120",  
+		"predavaonica": "003"
+	  },
+	  { 
+	    "ispit_id": 214983,   
+		"datum_odrzavanja": "2020-02-16",
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2020-02-11",  
+		"odjava_do": "2020-02-14",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Usmeni ispit teoretskog gradiva.",
+		"trajanje": "30",   
+		"predavaonica": "A102"
+	  }
+   ]
+}
+)
+
+
+//16.kolegij: Linearna algebra 1 - zimski
+db.kolegiji.insert(
+{
+   "isvu_sifra": 21501,
+   "naziv": "Linearna algebra 1",
+   "semestar": "zimski",
+   "ects_bodovi": 8,
+   "izborna_grupa": "ne",
+   "nositelj": "Damir Bakić",
+   "nositelj_oib": 34641126097,
+   "nastavni_sadrzaji": "Linearni, homogeni i ekvivalentni sustavi. Vektorski prostor. Prikaz vektora u bazi. ",
+   "ispiti": [
+      { 
+	    "ispit_id": 215011,    
+		"datum_odrzavanja": "2019-11-29", 
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2019-11-24",   
+		"odjava_do": "2019-11-27",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Teorija: iskazi, dokazi; zadaci: linearni sustavi, grupe, polja.", 
+		"trajanje": "120",
+		"predavaonica": "004"
+	  },
+	  { 
+	    "ispit_id": 215012,   
+		"datum_odrzavanja": "2020-02-07", 
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2020-02-02", 
+		"odjava_do": "2020-02-05",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Teorija: iskazi, dokazi; zadaci: determinanta, rang, skalarni produkt.", 
+		"trajanje": "120",  
+		"predavaonica": "004"
+	  },
+	  { 
+	    "ispit_id": 215013,   
+		"datum_odrzavanja": "2020-02-16",
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2020-02-11",  
+		"odjava_do": "2020-02-14",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Usmeni ispit.",
+		"trajanje": "30",   
+		"predavaonica": "A100"
+	  }
+   ]
+}
+)
+
+
+//17.kolegij: Vjerojatnost - ljetni
+db.kolegiji.insert(
+{
+   "isvu_sifra": 36905,
+   "naziv": "Vjerojatnost",
+   "semestar": "ljetni",
+   "ects_bodovi": 7,
+   "izborna_grupa": "ne",
+   "nositelj": "Zoran Vondraček",
+   "nositelj_oib": 91889900720,
+   "nastavni_sadrzaji": "Diskretni vjerojatnosni prostor. Geometrijske vjerojatnosti. Diskretne slučajne varijable.",
+   "ispiti": [
+      { 
+	    "ispit_id": 369051,    
+		"datum_odrzavanja": "2020-04-27", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-04-15",   
+		"odjava_do": "2020-04-18",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Šest zadataka, naglasak na diskretni vjerojatnosni prostor i geometrijske vjerojatnosti.", 
+		"trajanje": "120",
+		"predavaonica": "005"
+	  },
+	  { 
+	    "ispit_id": 369052,   
+		"datum_odrzavanja": "2020-06-13", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-06-08", 
+		"odjava_do": "2020-06-11",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Šest zadataka, naglasak na diskrente i neprekidne slučajne varijable.", 
+		"trajanje": "120",  
+		"predavaonica": "005"
+	  },
+	  { 
+	    "ispit_id": 369053,   
+		"datum_odrzavanja": "2020-07-06",
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2020-06-01",  
+		"odjava_do": "2020-07-04",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Usmeni ispit, dokazi za ocjenu odličan.",
+		"trajanje": "20",   
+		"predavaonica": "A002"
+	  }
+   ]
+}
+)
+
+
+
+//18.kolegij: Diskretna matematika - ljetni
+db.kolegiji.insert(
+{
+   "isvu_sifra": 36904,
+   "naziv": "Diskretna matematika",
+   "semestar": "ljetni",
+   "ects_bodovi": 5,
+   "izborna_grupa": "ne",
+   "nositelj": "Marcela Hanzer",
+   "nositelj_oib": 02235959970,
+   "nastavni_sadrzaji": "Upoznavanje studenata s osnovnim pojmovima kombinatorne i diskretne matematike te teorije grafova.",
+   "ispiti": [
+      { 
+	    "ispit_id": 369041,    
+		"datum_odrzavanja": "2020-04-27", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-04-22",   
+		"odjava_do": "2020-04-25",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Teorija i zadaci: kombinatorna prebrojavanja i rekurzivni problemi.", 
+		"trajanje": "120",
+		"predavaonica": "004"
+	  },
+	  { 
+	    "ispit_id": 369042,   
+		"datum_odrzavanja": "2020-06-23", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-06-18", 
+		"odjava_do": "2020-06-21",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Teorija i zadaci: FUI, funkcije izvodnice.", 
+		"trajanje": "120",  
+		"predavaonica": "003"
+	  },
+	  { 
+	    "ispit_id": 369043,   
+		"datum_odrzavanja": "2020-07-06",
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2020-06-01",  
+		"odjava_do": "2020-07-04",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Usmeni ispit: prebrojavanja, binomni koefiijenti, Catalanovi brojevi.",
+		"trajanje": "30",   
+		"predavaonica": "A101"
+	  }
+   ]
+}
+)
+
+
+//19.kolegij: Programiranje 1 - zimski
+db.kolegiji.insert(
+{
+   "isvu_sifra": 36901,
+   "naziv": "Programiranje 1",
+   "semestar": "zimski",
+   "ects_bodovi": 6,
+   "izborna_grupa": "ne",
+   "nositelj": "Saša Singer",
+   "nositelj_oib": 20335798653,
+   "nastavni_sadrzaji": "Princip rada računala. Prikaz podataka u računalu.",
+   "ispiti": [
+      { 
+	    "ispit_id": 369011,    
+		"datum_odrzavanja": "2019-11-25", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2019-11-20",   
+		"odjava_do": "2019-11-23",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Tri zadatka: denormalizirani brojevi, strojne pogreške.", 
+		"trajanje": "120",
+		"predavaonica": "PR3"
+	  },
+	  { 
+	    "ispit_id": 369012,   
+		"datum_odrzavanja": "2020-02-03", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-01-29", 
+		"odjava_do": "2020-02-01",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Tri zadatka: složenost, niz, kontrola toka, petlja, grananje.", 
+		"trajanje": "120",  
+		"predavaonica": "PR3"
+	  },
+	  { 
+	    "ispit_id": 369013,   
+		"datum_odrzavanja": "2020-02-19",
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2020-02-15",  
+		"odjava_do": "2020-02-17",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Usmeni ispit: algoritmi i strukture podataka.",
+		"trajanje": "20",   
+		"predavaonica": "PR3"
+	  }
+   ]
+}
+)
+
+
+
+//20.kolegij: Teorija brojeva - ljetni
+db.kolegiji.insert(
+{
+   "isvu_sifra": 92892,
+   "naziv": "Teorija brojeva",
+   "semestar": "ljetni",
+   "ects_bodovi": 5,
+   "izborna_grupa": "da",
+   "nositelj": "Andrej Dujella",
+   "nositelj_oib": 21309038219,
+   "nastavni_sadrzaji": "Osnovni pojmovi iz elementarne teorije brojeva.",
+   "ispiti": [
+      { 
+	    "ispit_id": 928921,    
+		"datum_odrzavanja": "2020-04-24", 
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2020-04-19",   
+		"odjava_do": "2020-04-22",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Četiri zadatka: djeljivost, kongruencije, kvadratni ostatci i kvadratne forme.", 
+		"trajanje": "120",
+		"predavaonica": "003"
+	  },
+	  { 
+	    "ispit_id": 928922,   
+		"datum_odrzavanja": "2020-06-23", 
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2020-06-18", 
+		"odjava_do": "2020-06-21",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Četiri zadatka: aritmetičke funkcije, diofantske aproksimacije.", 
+		"trajanje": "120",  
+		"predavaonica": "003"
+	  },
+	  { 
+	    "ispit_id": 928923,   
+		"datum_odrzavanja": "2020-07-15",
+		"vrijeme_odrzavanja": "10",
+		"prijava_do": "2020-07-10",  
+		"odjava_do": "2020-07-13",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Usmeni ispit: diofantske jednadžbe i kvadratna polja.",
+		"trajanje": "30",   
+		"predavaonica": "105"
+	  }
+   ]
+}
+)
+
+
+//21.kolegij: Modeli geometrije - ljetni
+db.kolegiji.insert(
+{
+   "isvu_sifra": 36928,
+   "naziv": "Modeli geometrije",
+   "semestar": "ljetni",
+   "ects_bodovi": 6,
+   "izborna_grupa": "da",
+   "nositelj": "Mirko Polonijo",
+   "nositelj_oib": 80617845652,
+   "nastavni_sadrzaji": "Koncepti i rezultati euklidske i neeuklidskih geometrija.",
+   "ispiti": [
+      { 
+	    "ispit_id": 369281,    
+		"datum_odrzavanja": "2020-04-24", 
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2020-04-19",   
+		"odjava_do": "2020-04-22",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Euklidska ravnina, ekvimorfna i afina grupa.", 
+		"trajanje": "120",
+		"predavaonica": "004"
+	  },
+	  { 
+	    "ispit_id": 369282,   
+		"datum_odrzavanja": "2020-06-23", 
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2020-06-18", 
+		"odjava_do": "2020-06-21",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Sferna trigonometrija i eliptička ravnina.", 
+		"trajanje": "120",  
+		"predavaonica": "004"
+	  },
+	  { 
+	    "ispit_id": 369283,   
+		"datum_odrzavanja": "2020-07-15",
+		"vrijeme_odrzavanja": "14",
+		"prijava_do": "2020-07-10",  
+		"odjava_do": "2020-07-13",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Usmeni ispit: ekvimorfna grupa, hiperbolička ravnina i vezani pojmovi.",
+		"trajanje": "30",   
+		"predavaonica": "A101"
+	  }
+   ]
+}
+)
+
+
+//22.kolegij: Elementarna matematika 1 - zimski
+db.kolegiji.insert(
+{
+   "isvu_sifra": 21504,
+   "naziv": "Elementarna matematika 1",
+   "semestar": "zimski",
+   "ects_bodovi": 8,
+   "izborna_grupa": "ne",
+   "nositelj": "Zvonimir Bujanović",
+   "nositelj_oib": 07186299870,
+   "nastavni_sadrzaji": "Logički veznici i složeni sudovi. Aksiom matematičke indukcije.",
+   "ispiti": [
+      { 
+	    "ispit_id": 215041,    
+		"datum_odrzavanja": "2019-11-18", 
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2019-11-13",   
+		"odjava_do": "2019-11-15",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Pismeni ispit pokriva gradivo prvih sedam cjelina skripte.", 
+		"trajanje": "120",
+		"predavaonica": "006"
+	  },
+	  { 
+	    "ispit_id": 215042,   
+		"datum_odrzavanja": "2020-01-27", 
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2020-01-22", 
+		"odjava_do": "2020-01-25",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Pismeni ispit pokriva gradivo drugih sedam cjelina skripte.", 
+		"trajanje": "120",  
+		"predavaonica": "006"
+	  },
+	  { 
+	    "ispit_id": 215043,   
+		"datum_odrzavanja": "2020-02-05",
+		"vrijeme_odrzavanja": "10",
+		"prijava_do": "2020-01-31",  
+		"odjava_do": "2020-02-03",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Usmeni ispit: naglasak na skupovima, funkcijama i polinomima.",
+		"trajanje": "20",   
+		"predavaonica": "A201"
+	  }
+   ]
+}
+)
+
+
+//23.kolegij: Strukture podataka i algoritmi - zimski
+db.kolegiji.insert(
+{
+   "isvu_sifra": 24206,
+   "naziv": "Strukture podataka i algoritmi",
+   "semestar": "zimski",
+   "ects_bodovi": 5,
+   "izborna_grupa": "ne",
+   "nositelj": "Robert Manger",
+   "nositelj_oib": 58672041093,
+   "nastavni_sadrzaji": "Apstraktni tipovi podataka. Osnovne metode za oblikovanje i analizu algoritama.",
+   "ispiti": [
+      { 
+	    "ispit_id": 242061,    
+		"datum_odrzavanja": "2019-11-18", 
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2019-11-13",   
+		"odjava_do": "2019-11-15",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Pismena provjera, uključivo s cjelinom pregled raznih struktura podataka.", 
+		"trajanje": "120",
+		"predavaonica": "PR3"
+	  },
+	  { 
+	    "ispit_id": 242062,   
+		"datum_odrzavanja": "2020-01-27", 
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2020-01-22", 
+		"odjava_do": "2020-01-25",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Pismena provjera, uključivo s cjelinom općenite metode za oblikovanje algoritama.", 
+		"trajanje": "120",  
+		"predavaonica": "PR4"
+	  },
+	  { 
+	    "ispit_id": 242063,   
+		"datum_odrzavanja": "2020-02-05",
+		"vrijeme_odrzavanja": "10",
+		"prijava_do": "2020-01-31",  
+		"odjava_do": "2020-02-03",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "",
+		"trajanje": "30",   
+		"predavaonica": "A101"
+	  }
+   ]
+}
+)
+
+
+//24.kolegij: Algebarske strukture - zimski
+db.kolegiji.insert(
+{
+   "isvu_sifra": 31425,
+   "naziv": "Algebarske strukture",
+   "semestar": "zimski",
+   "ects_bodovi": 6,
+   "izborna_grupa": "ne",
+   "nositelj": "Marcela Hanzer",
+   "nositelj_oib": 02235959970,
+   "nastavni_sadrzaji": "Proučavanje osnovnih algebarskih struktura: grupe, prstene, polja, algebre i moduli.",
+   "ispiti": [
+      { 
+	    "ispit_id": 314251,    
+		"datum_odrzavanja": "2019-11-22", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2019-11-17",   
+		"odjava_do": "2019-11-20",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Pismena provjera znanja, zaključno s faktorijalnim prstenima.", 
+		"trajanje": "120",
+		"predavaonica": "A102"
+	  },
+	  { 
+	    "ispit_id": 314252,   
+		"datum_odrzavanja": "2020-01-31", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-01-26", 
+		"odjava_do": "2020-01-29",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Pismena provjera znanja, zaključno s poluprostim modulom.", 
+		"trajanje": "120",  
+		"predavaonica": "A102"
+	  },
+	  { 
+	    "ispit_id": 314253,   
+		"datum_odrzavanja": "2020-02-12",
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-02-07",  
+		"odjava_do": "2020-02-10",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Usmena provjera znanja: grupe, prsteni, polja, algebre i moduli.",
+		"trajanje": "20",   
+		"predavaonica": "A001"
+	  }
+   ]
+}
+)
+
+
+//25.kolegij: Vektorski prostori - zimski
+db.kolegiji.insert(
+{
+   "isvu_sifra": 36911,
+   "naziv": "Vektorski prostori",
+   "semestar": "zimski",
+   "ects_bodovi": 7,
+   "izborna_grupa": "ne",
+   "nositelj": "Goran Muić",
+   "nositelj_oib": 70734762125,
+   "nastavni_sadrzaji": "Glavni rezultati teorije operatora na konačnodimenzionalnim vektorskim prostorima.",
+   "ispiti": [
+      { 
+	    "ispit_id": 369111,    
+		"datum_odrzavanja": "2019-11-22", 
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2019-11-17",   
+		"odjava_do": "2019-11-20",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Dulani prostor, spektar, karakteristični i minimalni polinom.", 
+		"trajanje": "120",
+		"predavaonica": "004"
+	  },
+	  { 
+	    "ispit_id": 369112,   
+		"datum_odrzavanja": "2020-01-31", 
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2020-01-26", 
+		"odjava_do": "2020-01-29",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Funkcionalni račun, geometrija unitarnih prostora.", 
+		"trajanje": "120",  
+		"predavaonica": "003"
+	  },
+	  { 
+	    "ispit_id": 369113,   
+		"datum_odrzavanja": "2020-02-19",
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2020-02-14",  
+		"odjava_do": "2020-02-17",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Normalni operatori na realnim prostorima. Hermitski operatori.",
+		"trajanje": "30",   
+		"predavaonica": "003"
+	  }
+   ]
+}
+)
+
+
+//26.kolegij: Iterativne metode - zimski
+db.kolegiji.insert(
+{
+   "isvu_sifra": 36920,
+   "naziv": "Iterativne metode",
+   "semestar": "zimski",
+   "ects_bodovi": 5,
+   "izborna_grupa": "da",
+   "nositelj": "Vjeran Hari",
+   "nositelj_oib": 59573393871,
+   "nastavni_sadrzaji": "Iterativne metode za rješavanje sustava linearnih jednadžbi i matričnog problema.",
+   "ispiti": [
+      { 
+	    "ispit_id": 369201,    
+		"datum_odrzavanja": "2019-11-18", 
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2019-11-13",   
+		"odjava_do": "2019-11-16",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Provjera gradiva: vlastite i singularne vrijednosti matrica.", 
+		"trajanje": "120",
+		"predavaonica": "104"
+	  },
+	  { 
+	    "ispit_id": 369202,   
+		"datum_odrzavanja": "2020-01-27", 
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2020-01-22", 
+		"odjava_do": "2020-01-25",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Provjera gradiva: računanje spektralne dekompozicije simetričnih matrica.", 
+		"trajanje": "120",  
+		"predavaonica": "104"
+	  },
+	  { 
+	    "ispit_id": 369203,   
+		"datum_odrzavanja": "2020-02-19",
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2020-02-14",  
+		"odjava_do": "2020-02-17",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Obrana svih vježbi iz MATLABA.",
+		"trajanje": "45",   
+		"predavaonica": "PR3"
+	  }
+   ]
+}
+)
+
+
+//27.kolegij: Markovljevi lanci - ljetni
+db.kolegiji.insert(
+{
+   "isvu_sifra": 36921,
+   "naziv": "Markovljevi lanci",
+   "semestar": "ljetni",
+   "ects_bodovi": 6,
+   "izborna_grupa": "da",
+   "nositelj": "Vjekoslav Kovač",
+   "nositelj_oib": 32888028857,
+   "nastavni_sadrzaji": "Fundamentalni rezultati teorije homogenih Markovljevih lanaca s diskretnim vremenom.",
+   "ispiti": [
+      { 
+	    "ispit_id": 369211,    
+		"datum_odrzavanja": "2020-04-27", 
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2020-04-22",   
+		"odjava_do": "2020-04-25",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Od prve cjeline do pete, zaključno s analizom slučajnih šetnji.", 
+		"trajanje": "120",
+		"predavaonica": "A102"
+	  },
+	  { 
+	    "ispit_id": 369212,   
+		"datum_odrzavanja": "2020-06-23", 
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2020-06-18", 
+		"odjava_do": "2020-06-21",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Od šeste cjeline do desete, zaključno s primjenom procesa.", 
+		"trajanje": "120",  
+		"predavaonica": "A102"
+	  },
+	  { 
+	    "ispit_id": 369213,   
+		"datum_odrzavanja": "2020-07-15",
+		"vrijeme_odrzavanja": "14",
+		"prijava_do": "2020-07-10",  
+		"odjava_do": "2020-07-13",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Usmeni ispit: Markovljevi procesi odlučivanja.",
+		"trajanje": "30",   
+		"predavaonica": "A102"
+	  }
+   ]
+}
+)
+
+
+//28.kolegij: Euklidski prostori - zimski
+db.kolegiji.insert(
+{
+   "isvu_sifra": 33453,
+   "naziv": "Euklidski prostori",
+   "semestar": "zimski",
+   "ects_bodovi": 4,
+   "izborna_grupa": "da",
+   "nositelj": "Mirko Polonijo",
+   "nositelj_oib": 80617845652,
+   "nastavni_sadrzaji": "Afini i euklidski prostori.",
+   "ispiti": [
+      { 
+	    "ispit_id": 334531,    
+		"datum_odrzavanja": "2019-11-20", 
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2019-11-15",   
+		"odjava_do": "2019-11-18",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Prvih sedam cjelina, bez simpleksa.", 
+		"trajanje": "120",
+		"predavaonica": "101"
+	  },
+	  { 
+	    "ispit_id": 334532,   
+		"datum_odrzavanja": "2020-01-29", 
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2020-01-24", 
+		"odjava_do": "2020-01-27",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Posljednjih osam cjelina, uključujući podgrupe izometrija.", 
+		"trajanje": "120",  
+		"predavaonica": "110"
+	  },
+	  { 
+	    "ispit_id": 334533,   
+		"datum_odrzavanja": "2020-02-18",
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2020-02-13",  
+		"odjava_do": "2020-02-16",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Afina preslikavanja, izometrije i izometrični operatori.",
+		"trajanje": "30",   
+		"predavaonica": "101"
+	  }
+   ]
+}
+)
+
+
+//29.kolegij: Matematička analiza 2 - ljetni
+db.kolegiji.insert(
+{
+   "isvu_sifra": 21508,
+   "naziv": "Matematička analiza 2",
+   "semestar": "ljetni",
+   "ects_bodovi": 9,
+   "izborna_grupa": "ne",
+   "nositelj": "Boris Guljaš",
+   "nositelj_oib": 14824362269,
+   "nastavni_sadrzaji": "Osnove diferencijalnog i integralnog računa u jednoj dimenziji.",
+   "ispiti": [
+      { 
+	    "ispit_id": 215081,    
+		"datum_odrzavanja": "2020-04-29", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-04-24",   
+		"odjava_do": "2020-04-27",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Derivabilnost, neprekidnost, monotonost, lokalni ekstremi.", 
+		"trajanje": "120",
+		"predavaonica": "A101"
+	  },
+	  { 
+	    "ispit_id": 215082,   
+		"datum_odrzavanja": "2020-06-24", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-06-19", 
+		"odjava_do": "2020-06-22",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Integrabilnost monotonih funkcija.", 
+		"trajanje": "120",  
+		"predavaonica": "A101"
+	  },
+	  { 
+	    "ispit_id": 215083,   
+		"datum_odrzavanja": "2020-07-03",
+		"vrijeme_odrzavanja": "10",
+		"prijava_do": "2020-06-29",  
+		"odjava_do": "2020-07-01",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Derivacije, integrali, redovi.",
+		"trajanje": "30",   
+		"predavaonica": "A001"
+	  }
+   ]
+}
+)
+
+
+//30.kolegij: Linearna algebra 2 - ljetni
+db.kolegiji.insert(
+{
+   "isvu_sifra": 21515,
+   "naziv": "Linearna algebra 2",
+   "semestar": "ljetni",
+   "ects_bodovi": 9,
+   "izborna_grupa": "ne",
+   "nositelj": "Damir Bakić",
+   "nositelj_oib": 34641126097,
+   "nastavni_sadrzaji": "Elementi teorije linearnih operatora na konačnodimenzionalnom vektorskom prostoru.",
+   "ispiti": [
+      { 
+	    "ispit_id": 215151,    
+		"datum_odrzavanja": "2020-04-22", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-04-17",   
+		"odjava_do": "2020-04-20",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Provjera gradiva zaključno s Geršgorinovim krugovima.", 
+		"trajanje": "120",
+		"predavaonica": "A101"
+	  },
+	  { 
+	    "ispit_id": 215152,   
+		"datum_odrzavanja": "2020-06-17", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-06-12", 
+		"odjava_do": "2020-06-15",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Provjera gradiva zaključno s plohama drugog reda.", 
+		"trajanje": "120",  
+		"predavaonica": "A101"
+	  },
+	  { 
+	    "ispit_id": 215153,   
+		"datum_odrzavanja": "2020-07-01",
+		"vrijeme_odrzavanja": "10",
+		"prijava_do": "2020-06-24",  
+		"odjava_do": "2020-06-29",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Slika i jezgra linearnog operatora. Rang operatora.",
+		"trajanje": "30",   
+		"predavaonica": "A001"
+	  }
+   ]
+}
+)
+
+
+//30.kolegij: Elementarna matematika 2 - ljetni
+db.kolegiji.insert(
+{
+   "isvu_sifra": 21518,
+   "naziv": "Elementarna matematika 2",
+   "semestar": "ljetni",
+   "ects_bodovi": 6,
+   "izborna_grupa": "ne",
+   "nositelj": "Zvonimir Bujanović",
+   "nositelj_oib": 07186299870,
+   "nastavni_sadrzaji": "Vektori i analitiča geometrija ravnine.",
+   "ispiti": [
+      { 
+	    "ispit_id": 215181,    
+		"datum_odrzavanja": "2020-04-29", 
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2020-04-24",   
+		"odjava_do": "2020-04-27",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Euklidovi aksiomi. Kartezijev model.", 
+		"trajanje": "120",
+		"predavaonica": "109"
+	  },
+	  { 
+	    "ispit_id": 215182,   
+		"datum_odrzavanja": "2020-06-17", 
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2020-06-12", 
+		"odjava_do": "2020-06-15",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Kartezijev koordinatni sustav u prostoru. Ravnina u prostoru.", 
+		"trajanje": "120",  
+		"predavaonica": "104"
+	  },
+	  { 
+	    "ispit_id": 215183,   
+		"datum_odrzavanja": "2020-07-08",
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2020-07-03",  
+		"odjava_do": "2020-07-06",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Analitička geometrija u ravnini i prostoru.",
+		"trajanje": "20",   
+		"predavaonica": "108"
+	  }
+   ]
+}
+)
+
+
+//31.kolegij: Programiranje 2 - ljetni
+db.kolegiji.insert(
+{
+   "isvu_sifra": 36903,
+   "naziv": "Programiranje 2",
+   "semestar": "ljetni",
+   "ects_bodovi": 6,
+   "izborna_grupa": "ne",
+   "nositelj": "Saša Singer",
+   "nositelj_oib": 20335798653,
+   "nastavni_sadrzaji": "Osnove programiranja u programskom jeziku C.",
+   "ispiti": [
+      { 
+	    "ispit_id": 369031,    
+		"datum_odrzavanja": "2020-04-22", 
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2020-04-17",   
+		"odjava_do": "2020-04-20",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Kontrola toka programa, preprocesorske naredbe.", 
+		"trajanje": "120",
+		"predavaonica": "PR2"
+	  },
+	  { 
+	    "ispit_id": 369032,   
+		"datum_odrzavanja": "2020-06-17", 
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2020-06-12", 
+		"odjava_do": "2020-06-15",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Polja, pokazivači, strukture, datoteke.", 
+		"trajanje": "120",  
+		"predavaonica": "PR1"
+	  },
+	  { 
+	    "ispit_id": 369033,   
+		"datum_odrzavanja": "2020-07-08",
+		"vrijeme_odrzavanja": "15",
+		"prijava_do": "2020-07-03",  
+		"odjava_do": "2020-07-06",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Obrana domaćih zadaća.",
+		"trajanje": "20",   
+		"predavaonica": "PR4"
+	  }
+   ]
+}
+)
+
+
+//33.kolegij: Fizika 1 - zimski
+db.kolegiji.insert(
+{
+   "isvu_sifra": 31418,
+   "naziv": "Fizika 1",
+   "semestar": "zimski",
+   "ects_bodovi": 4,
+   "izborna_grupa": "da",
+   "nositelj": "Željko Skoko",
+   "nositelj_oib": 16038302162,
+   "nastavni_sadrzaji": "Ključni pojmovi i teme s područja mehanike.",
+   "ispiti": [
+      { 
+	    "ispit_id": 314181,    
+		"datum_odrzavanja": "2019-11-20", 
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2019-11-15",   
+		"odjava_do": "2019-11-18",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Četiri zadatka, Galilejeve transformacije i Lorentzove transformacije.", 
+		"trajanje": "120",
+		"predavaonica": "F12"
+	  },
+	  { 
+	    "ispit_id": 314182,   
+		"datum_odrzavanja": "2020-01-29", 
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2020-01-24", 
+		"odjava_do": "2020-01-27",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Četiri zadatka, jednadžba stanja idealnog plina.", 
+		"trajanje": "120",  
+		"predavaonica": "F12"
+	  },
+	  { 
+	    "ispit_id": 314183,   
+		"datum_odrzavanja": "2020-02-18",
+		"vrijeme_odrzavanja": "11",
+		"prijava_do": "2020-02-13",  
+		"odjava_do": "2020-02-16",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Rotacije čvrstog tijela, relativistička dinamika.",
+		"trajanje": "30",   
+		"predavaonica": "F13"
+	  }
+   ]
+}
+)
+
+
+//34.kolegij: Fizika 2 - ljetni
+db.kolegiji.insert(
+{
+   "isvu_sifra": 31419,
+   "naziv": "Fizika 2",
+   "semestar": "ljetni",
+   "ects_bodovi": 5,
+   "izborna_grupa": "da",
+   "nositelj": "Željko Skoko",
+   "nositelj_oib": 16038302162,
+   "nastavni_sadrzaji": "Ključni pojmovI i teme s područja elektromagnetizma.",
+   "ispiti": [
+      { 
+	    "ispit_id": 314191,    
+		"datum_odrzavanja": "2020-04-22", 
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2020-04-17",   
+		"odjava_do": "2020-04-20",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Zadatci iz cjelina elektrostatike i magnetostatike.", 
+		"trajanje": "120",
+		"predavaonica": "F13"
+	  },
+	  { 
+	    "ispit_id": 314192,   
+		"datum_odrzavanja": "2020-06-17", 
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2020-06-12", 
+		"odjava_do": "2020-06-15",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Zadaci iz cjelina izmjenične struje i teorije atoma.", 
+		"trajanje": "120",  
+		"predavaonica": "F13"
+	  },
+	  { 
+	    "ispit_id": 314193,   
+		"datum_odrzavanja": "2020-07-09",
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2020-07-04",  
+		"odjava_do": "2020-07-07",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Naglasak na Maxwellovu formulacija klasične elektrodinamike.",
+		"trajanje": "20",   
+		"predavaonica": "F12"
+	  }
+   ]
+}
+)
+
+
+//35.kolegij: Bioinformatika - zimski
+db.kolegiji.insert(
+{
+   "isvu_sifra": 31422,
+   "naziv": "Bioinformatika",
+   "semestar": "zimski",
+   "ects_bodovi": 6,
+   "izborna_grupa": "da",
+   "nositelj": "Pavle Goldstein",
+   "nositelj_oib": 06788793731,
+   "nastavni_sadrzaji": "Osnovne tehnike kombinatornog i vjerojatnosnog modeliranja bioloških nizova.",
+   "ispiti": [
+      { 
+	    "ispit_id": 314221,    
+		"datum_odrzavanja": "2019-11-20", 
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2019-11-15",   
+		"odjava_do": "2019-11-18",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Supstitucijske matrice. Algoritmi za poravnavanje parova nizova. ", 
+		"trajanje": "120",
+		"predavaonica": "A002"
+	  },
+	  { 
+	    "ispit_id": 314222,   
+		"datum_odrzavanja": "2020-01-29", 
+		"vrijeme_odrzavanja": "12",
+		"prijava_do": "2020-01-24", 
+		"odjava_do": "2020-01-27",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Baum - Welchova optimizacija. Profil familije.", 
+		"trajanje": "120",  
+		"predavaonica": "A002"
+	  },
+	  { 
+	    "ispit_id": 314223,   
+		"datum_odrzavanja": "2020-02-18",
+		"vrijeme_odrzavanja": "11",
+		"prijava_do": "2020-02-13",  
+		"odjava_do": "2020-02-16",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Filogenetska stabla. Neighbour - joining algoritam.",
+		"trajanje": "30",   
+		"predavaonica": "110"
+	  }
+   ]
+}
+)
+
+
+//36.kolegij: Mjera i integral - zimski
+db.kolegiji.insert(
+{
+   "isvu_sifra": 33220,
+   "naziv": "Mjera i integral",
+   "semestar": "zimski",
+   "ects_bodovi": 6,
+   "izborna_grupa": "ne",
+   "nositelj": "Vjekoslav Kovač",
+   "nositelj_oib": 32888028857,
+   "nastavni_sadrzaji": "Pojam apstraktne mjere, izmjerivih preslikavanja i integrala u odnosu na mjeru.",
+   "ispiti": [
+      { 
+	    "ispit_id": 332201,    
+		"datum_odrzavanja": "2019-11-22", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2019-11-17",   
+		"odjava_do": "2019-11-20",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Mjera na prstenu. Integral nenegativne funkcije.", 
+		"trajanje": "120",
+		"predavaonica": "003"
+	  },
+	  { 
+	    "ispit_id": 332202,   
+		"datum_odrzavanja": "2020-01-31", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-01-26", 
+		"odjava_do": "2020-01-29",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Radon - Nikodymov teorem. Lebesgueova dekompozicija.", 
+		"trajanje": "120",  
+		"predavaonica": "003"
+	  },
+	  { 
+	    "ispit_id": 332203,   
+		"datum_odrzavanja": "2020-02-14",
+		"vrijeme_odrzavanja": "11",
+		"prijava_do": "2020-02-09",  
+		"odjava_do": "2020-02-12",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Provjera teoretskog dijela gradiva.",
+		"trajanje": "30",   
+		"predavaonica": "A001"
+	  }
+   ]
+}
+)
+
+
+//37.kolegij: Statistika - zimski
+db.kolegiji.insert(
+{
+   "isvu_sifra": 97015,
+   "naziv": "Statistika",
+   "semestar": "zimski",
+   "ects_bodovi": 6,
+   "izborna_grupa": "ne",
+   "nositelj": "Siniša Slijepčević",
+   "nositelj_oib": 56901033968,
+   "nastavni_sadrzaji": "Osnovni pojmovi i klasične metode statističke analize podataka.",
+   "ispiti": [
+      { 
+	    "ispit_id": 970151,    
+		"datum_odrzavanja": "2019-11-25", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2019-11-20",   
+		"odjava_do": "2019-11-23",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Mjere centralne tendencije. Regresijska funkcija. Regresijska funkcija.", 
+		"trajanje": "120",
+		"predavaonica": "004"
+	  },
+	  { 
+	    "ispit_id": 970152,   
+		"datum_odrzavanja": "2020-02-03", 
+		"vrijeme_odrzavanja": "9",
+		"prijava_do": "2020-01-28", 
+		"odjava_do": "2020-02-01",    
+		"nacin_polaganja": "pismeno",
+		"sadrzaj": "Empirijska funkcija distribucije. Metoda momenata.", 
+		"trajanje": "120",  
+		"predavaonica": "004"
+	  },
+	  { 
+	    "ispit_id": 970153,   
+		"datum_odrzavanja": "2020-02-21",
+		"vrijeme_odrzavanja": "11",
+		"prijava_do": "2020-02-16",  
+		"odjava_do": "2020-02-19",   
+		"nacin_polaganja": "usmeno",
+		"sadrzaj": "Gauss - Markovljev teorem, Kolmogorov - Smirnovljev test.",
+		"trajanje": "30",   
+		"predavaonica": "A102"
+	  }
+   ]
+}
+)
+

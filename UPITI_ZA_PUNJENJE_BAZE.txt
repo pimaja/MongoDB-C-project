@@ -1,0 +1,4097 @@
+Pokretanje monga:
+	docker start nbp-mongo
+	docker exec -it nbp-mongo bash
+	mongo
+	
+Kreiramo bazu za rad:
+	use ispiti
+	
+Upiti za kreiranje kreiranje kolekcija:
+	db.createCollection("studenti")
+	db.createCollection("nastavnici")
+	db.createCollection("kolegiji")
+	
+Upiti za popunjavanje kolekcija:
+	db.studenti.insert(
+		[
+			{
+				"jmbag": 1191234996, 
+				"ime": "Ante", 
+				"prezime": "Antić", 
+				"razina":"diplomski", 
+				"smjer":"Računarstvo i matematika", 
+				"kolegiji": [ 
+					{
+						"isvu_sifra": 92979,  
+						"naziv": "Oblikovanje i analiza algoritama", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 929791, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 929792, 
+								"status": "obavljen", 
+								"rezultat": "80%"
+							}, 
+							{ 
+								"ispit_id": 929793,
+								"status": "obavljen",
+								"rezultat": "80%"
+							} 
+						], 
+						"ocjena": "4"
+					},
+					{
+						"isvu_sifra": 45688,  
+						"naziv": "Umjetna inteligencija",
+						"ects_bodovi": 5, 
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456881, 
+								"status": "obavljen", 
+								"rezultat": "90%"
+							}, 
+							{ 
+								"ispit_id": 456882, 
+								"status": "obavljen", 
+								"rezultat": "80%"
+							}, 
+							{ 
+								"ispit_id": 456883,
+								"status": "obavljen",
+								"rezultat": "95%"
+							} 
+						], 
+						"ocjena": "5"
+					},
+					{
+						"isvu_sifra": 92949,  
+						"naziv": "Mreže računala",
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 929491, 
+								"status": "obavljen", 
+								"rezultat": "90%"
+							}, 
+							{ 
+								"ispit_id": 929492, 
+								"status": "obavljen", 
+								"rezultat": "100%"
+							}, 
+							{ 
+								"ispit_id": 929493,
+								"status": "obavljen",
+								"rezultat": "90%"
+							} 
+						], 
+						"ocjena": "5"
+					},
+					{
+						"isvu_sifra": 45689,  
+						"naziv": "Matematička logika",
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456891, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 456892, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 456893,
+								"status": "obavljen",
+								"rezultat": "70%"
+							} 
+						], 
+						"ocjena": "3"
+					},
+					{
+						"isvu_sifra": 92978,  
+						"naziv": "Građa računala", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 929781, 
+								"status": "obavljen", 
+								"rezultat": "80%"
+							}, 
+							{ 
+								"ispit_id": 929782, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 929783,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 45691,  
+						"naziv": "Operacijski sustavi", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456911, 
+								"status": "obavljen", 
+								"rezultat": "80%"
+							}, 
+							{ 
+								"ispit_id": 456912, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 456913,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 61519,  
+						"naziv": "Interpretacija programa",
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 615191, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 615192, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 615193,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 45693,  
+						"naziv": "Baze podataka",
+						"ects_bodovi": 4,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456931, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 456932, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 456933,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 45694,  
+						"naziv": "Objektno programiranje",
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456941, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 456942, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 456943,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					}
+				]
+			},
+			{
+				"jmbag": 1191235023, 
+				"ime": "Pero", 
+				"prezime": "Perić", 
+				"razina":"preddiplomski", 
+				"smjer":"Matematika", 
+				"kolegiji": [ 
+					{
+						"isvu_sifra": 92949,  
+						"naziv": "Mreže računala",
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 929491, 
+								"status": "obavljen", 
+								"rezultat": "90%"
+							}, 
+							{ 
+								"ispit_id": 929492, 
+								"status": "obavljen", 
+								"rezultat": "80%"
+							}, 
+							{ 
+								"ispit_id": 929493,
+								"status": "obavljen",
+								"rezultat": "70%"
+							} 
+						], 
+						"ocjena": "4"
+					},
+					{
+						"isvu_sifra": 92978,  
+						"naziv": "Građa računala",
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 929781, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 929782, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 929783,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 45693,  
+						"naziv": "Baze podataka",
+						"ects_bodovi": 4,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456931, 
+								"status": "obavljen", 
+								"rezultat": "90%"
+							}, 
+							{ 
+								"ispit_id": 456932, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 456933,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 36928,  
+						"naziv": "Modeli geometrije",
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369281, 
+								"status": "obavljen", 
+								"rezultat": "95%"
+							}, 
+							{ 
+								"ispit_id": 369282, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 369283,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 33220,  
+						"naziv": "Mjera i integral",
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 332201, 
+								"status": "obavljen", 
+								"rezultat": "65%"
+							}, 
+							{ 
+								"ispit_id": 332202, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 332203,
+								"status": "obavljen",
+								"rezultat": "60%"
+							} 
+						], 
+						"ocjena": "3"
+					},
+					{
+						"isvu_sifra": 97015,  
+						"naziv": "Statistika",
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 970151, 
+								"status": "obavljen", 
+								"rezultat": "84%"
+							}, 
+							{ 
+								"ispit_id": 970152, 
+								"status": "obavljen", 
+								"rezultat": "76%"
+							}, 
+							{ 
+								"ispit_id": 970153,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					}
+				]
+			},
+			{
+				"jmbag": 1191235114, 
+				"ime": "Iva", 
+				"prezime": "Ivić", 
+				"razina":"diplomski", 
+				"smjer":"Računarstvo i matematika", 
+				"kolegiji": [ 
+					{
+						"isvu_sifra": 92979,  
+						"naziv": "Oblikovanje i analiza algoritama", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 929791, 
+								"status": "obavljen", 
+								"rezultat": "50%"
+							}, 
+							{ 
+								"ispit_id": 929792, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 929793,
+								"status": "obavljen",
+								"rezultat": "70%"
+							} 
+						], 
+						"ocjena": "3"
+					},
+					{
+						"isvu_sifra": 45688,  
+						"naziv": "Umjetna inteligencija", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456881, 
+								"status": "obavljen", 
+								"rezultat": "95%"
+							}, 
+							{ 
+								"ispit_id": 456882, 
+								"status": "obavljen", 
+								"rezultat": "90%"
+							}, 
+							{ 
+								"ispit_id": 456883,
+								"status": "obavljen",
+								"rezultat": "95%"
+							} 
+						], 
+						"ocjena": "5"
+					},
+					{
+						"isvu_sifra": 45689,  
+						"naziv": "Matematička logika", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456891, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 456892, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 456893,
+								"status": "obavljen",
+								"rezultat": "70%"
+							} 
+						], 
+						"ocjena": "3"
+					},
+					{
+						"isvu_sifra": 45691,  
+						"naziv": "Operacijski sustavi",
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456911, 
+								"status": "obavljen", 
+								"rezultat": "90%"
+							}, 
+							{ 
+								"ispit_id": 456912, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 456913,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 61519,  
+						"naziv": "Interpretacija programa", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 615191, 
+								"status": "obavljen", 
+								"rezultat": "80%"
+							}, 
+							{ 
+								"ispit_id": 615192, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 615193,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 45696,  
+						"naziv": "Kombinatorika", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456961, 
+								"status": "obavljen", 
+								"rezultat": "90%"
+							}, 
+							{ 
+								"ispit_id": 456962, 
+								"status": "obavljen", 
+								"rezultat": "85%"
+							}, 
+							{ 
+								"ispit_id": 456963,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 45704,  
+						"naziv": "Operacijska istraživanja", 
+						"ects_bodovi": 4,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 457041, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 457042, 
+								"status": "obavljen", 
+								"rezultat": "65%"
+							}, 
+							{ 
+								"ispit_id": 457043,
+								"status": "obavljen",
+								"rezultat": "64%"
+							} 
+						], 
+						"ocjena": "3"
+					},
+					{
+						"isvu_sifra": 92953,  
+						"naziv": "Računalna grafika", 
+						"ects_bodovi": 4,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 929531, 
+								"status": "obavljen", 
+								"rezultat": "40%"
+							}, 
+							{ 
+								"ispit_id": 929532, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 929533,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 92955,  
+						"naziv": "Konačne geometrije", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 929551, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 929552, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 929553,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					}
+				]
+			},
+			{
+				"jmbag": 1191235679, 
+				"ime": "Ema", 
+				"prezime": "Emić", 
+				"razina":"diplomski", 
+				"smjer":"Računarstvo i matematika", 
+				"kolegiji": [
+					{
+						"isvu_sifra": 45688,  
+						"naziv": "Umjetna inteligencija", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456881, 
+								"status": "obavljen", 
+								"rezultat": "90%"
+							}, 
+							{ 
+								"ispit_id": 456882, 
+								"status": "obavljen", 
+								"rezultat": "100%"
+							}, 
+							{ 
+								"ispit_id": 456883,
+								"status": "obavljen",
+								"rezultat": "90%"
+							} 
+						], 
+						"ocjena": "5"
+					},
+					{
+						"isvu_sifra": 45689,  
+						"naziv": "Matematička logika",
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456891, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 456892, 
+								"status": "obavljen", 
+								"rezultat": "80%"
+							}, 
+							{ 
+								"ispit_id": 456893,
+								"status": "obavljen",
+								"rezultat": "80%"
+							} 
+						], 
+						"ocjena": "4"
+					},
+					{
+						"isvu_sifra": 45691,  
+						"naziv": "Operacijski sustavi", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456911, 
+								"status": "obavljen", 
+								"rezultat": "90%"
+							}, 
+							{ 
+								"ispit_id": 456912, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 456913,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 61519,  
+						"naziv": "Interpretacija programa",
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 615191, 
+								"status": "obavljen", 
+								"rezultat": "80%"
+							}, 
+							{ 
+								"ispit_id": 615192, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 615193,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 45696,  
+						"naziv": "Kombinatorika",
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456961, 
+								"status": "obavljen", 
+								"rezultat": "80%"
+							}, 
+							{ 
+								"ispit_id": 456962, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 456963,
+								"status": "obavljen",
+								"rezultat": "75%"
+							} 
+						], 
+						"ocjena": "4"
+					},
+					{
+						"isvu_sifra": 45704,  
+						"naziv": "Operacijska istraživanja",
+						"ects_bodovi": 4,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 457041, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 457042, 
+								"status": "obavljen", 
+								"rezultat": "75%"
+							}, 
+							{ 
+								"ispit_id": 457043,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					}, 
+					{
+						"isvu_sifra": 92953,  
+						"naziv": "Računalna grafika",
+						"ects_bodovi": 4,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 929531, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 929532, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 929533,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 92955,  
+						"naziv": "Konačne geometrije",
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 929551, 
+								"status": "obavljen", 
+								"rezultat": "78%"
+							}, 
+							{ 
+								"ispit_id": 929552, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 929553,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					}
+				]
+			},
+			{
+				"jmbag": 1191235799, 
+				"ime": "Darko", 
+				"prezime": "Darkić", 
+				"razina":"preddiplomski", 
+				"smjer":"Matematika", 
+				"kolegiji": [ 
+					{
+						"isvu_sifra": 92949,  
+						"naziv": "Mreže računala", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 929491, 
+								"status": "obavljen", 
+								"rezultat": "80%"
+							}, 
+							{ 
+								"ispit_id": 929492, 
+								"status": "obavljen", 
+								"rezultat": "100%"
+							}, 
+							{ 
+								"ispit_id": 929493,
+								"status": "obavljen",
+								"rezultat": "90%"
+							} 
+						], 
+						"ocjena": "5"
+					},
+					{
+						"isvu_sifra": 45595,  
+						"naziv": "Računarski praktikum 2", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 455951, 
+								"status": "obavljen", 
+								"rezultat": "80%"
+							}, 
+							{ 
+								"ispit_id": 455952, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 455953,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 36904,  
+						"naziv": "Diskretna matematika", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369041, 
+								"status": "obavljen", 
+								"rezultat": "52%"
+							}, 
+							{ 
+								"ispit_id": 369042, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 369043,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 36928,  
+						"naziv": "Modeli geometrije", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369281, 
+								"status": "obavljen", 
+								"rezultat": "84%"
+							}, 
+							{ 
+								"ispit_id": 369282, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 369283,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 36921,  
+						"naziv": "Markovljevi lanci", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369211, 
+								"status": "obavljen", 
+								"rezultat": "57%"
+							}, 
+							{ 
+								"ispit_id": 369212, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 369213,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 33220,  
+						"naziv": "Mjera i integral", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 332201, 
+								"status": "obavljen", 
+								"rezultat": "35%"
+							}, 
+							{ 
+								"ispit_id": 332202, 
+								"status": "obavljen", 
+								"rezultat": "64%"
+							}, 
+							{ 
+								"ispit_id": 332203,
+								"status": "obavljen",
+								"rezultat": "75%"
+							} 
+						], 
+						"ocjena": "3"
+					},
+					{
+						"isvu_sifra": 97015,  
+						"naziv": "Statistika", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 970151, 
+								"status": "obavljen", 
+								"rezultat": "74%"
+							}, 
+							{ 
+								"ispit_id": 970152, 
+								"status": "obavljen", 
+								"rezultat": "84%"
+							}, 
+							{ 
+								"ispit_id": 970153,
+								"status": "obavljen",
+								"rezultat": "82%"
+							} 
+						], 
+						"ocjena": "4"
+					}
+				]
+			},
+			{
+				"jmbag": 1191235812, 
+				"ime": "Lucija", 
+				"prezime": "Lucić", 
+				"razina":"preddiplomski", 
+				"smjer":"Matematika", 
+				"kolegiji": [ 
+					{
+						"isvu_sifra": 92978,  
+						"naziv": "Građa računala", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 929781, 
+								"status": "obavljen", 
+								"rezultat": "90%"
+							}, 
+							{ 
+								"ispit_id": 929782, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 929783,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 33220,  
+						"naziv": "Mjera i integral", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 332201, 
+								"status": "obavljen", 
+								"rezultat": "40%"
+							}, 
+							{ 
+								"ispit_id": 332202, 
+								"status": "objavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 332203,
+								"status": "objavljen",
+								"rezultat": "58%"
+							} 
+						], 
+						"ocjena": "2"
+					},
+					{
+						"isvu_sifra": 97015,  
+						"naziv": "Statistika", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 970151, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 970152, 
+								"status": "objavljen", 
+								"rezultat": "80%"
+							}, 
+							{ 
+								"ispit_id": 970153,
+								"status": "objavljen",
+								"rezultat": "83%"
+							} 
+						], 
+						"ocjena": "4"
+					},
+					{
+						"isvu_sifra": 31425,  
+						"naziv": "Algebarske strukture", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 314251, 
+								"status": "obavljen", 
+								"rezultat": "46%"
+							}, 
+							{ 
+								"ispit_id": 314252, 
+								"status": "objavljen", 
+								"rezultat": "58%"
+							}, 
+							{ 
+								"ispit_id": 314253,
+								"status": "objavljen",
+								"rezultat": "69%"
+							} 
+						], 
+						"ocjena": "3"
+					},
+					{
+						"isvu_sifra": 36911,  
+						"naziv": "Vektorski prostori", 
+						"ects_bodovi": 7,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369111, 
+								"status": "obavljen", 
+								"rezultat": "85%"
+							}, 
+							{ 
+								"ispit_id": 369112, 
+								"status": "objavljen", 
+								"rezultat": "75%"
+							}, 
+							{ 
+								"ispit_id": 369113,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 36921,  
+						"naziv": "Markovljevi lanci", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369211, 
+								"status": "obavljen", 
+								"rezultat": "64%"
+							}, 
+							{ 
+								"ispit_id": 369212, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 369213,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 36928,  
+						"naziv": "Modeli geometrije", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369281, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 369282, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 369283,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 92892,  
+						"naziv": "Teorija brojeva", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 928921, 
+								"status": "obavljen", 
+								"rezultat": "100%"
+							}, 
+							{ 
+								"ispit_id": 928922, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 928923,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 31419,  
+						"naziv": "Fizika 2", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 314191, 
+								"status": "obavljen", 
+								"rezultat": "80%"
+							}, 
+							{ 
+								"ispit_id": 314192, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 314193,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					}
+				]
+			},
+			{
+				"jmbag": 1191235996, 
+				"ime": "Klara", 
+				"prezime": "Klarić", 
+				"razina":"diplomski", 
+				"smjer":"Računarstvo i matematika", 
+				"kolegiji": [ 
+					{
+						"isvu_sifra": 92979,  
+						"naziv": "Oblikovanje i analiza algoritama", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 929791, 
+								"status": "obavljen", 
+								"rezultat": "50%"
+							}, 
+							{ 
+								"ispit_id": 929792, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 929793,
+								"status": "obavljen",
+								"rezultat": "50%"
+							} 
+						], 
+						"ocjena": "2"
+					},
+					{
+						"isvu_sifra": 45688,  
+						"naziv": "Umjetna inteligencija", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456881, 
+								"status": "obavljen", 
+								"rezultat": "80%"
+							}, 
+							{ 
+								"ispit_id": 456882, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 456883,
+								"status": "obavljen",
+								"rezultat": "75%"
+							} 
+						], 
+						"ocjena": "4"
+					},
+					{
+						"isvu_sifra": 92949,  
+						"naziv": "Mreže računala", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 929491, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 929492, 
+								"status": "obavljen", 
+								"rezultat": "90%"
+							}, 
+							{ 
+								"ispit_id": 929493,
+								"status": "obavljen",
+								"rezultat": "80%"
+							} 
+						], 
+						"ocjena": "4"
+					},
+					{
+						"isvu_sifra": 45689,  
+						"naziv": "Matematička logika",
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456891, 
+								"status": "obavljen", 
+								"rezultat": "50%"
+							}, 
+							{ 
+								"ispit_id": 456892, 
+								"status": "obavljen", 
+								"rezultat": "55%"
+							}, 
+							{ 
+								"ispit_id": 456893,
+								"status": "obavljen",
+								"rezultat": "50%"
+							} 
+						], 
+						"ocjena": "2"
+					},
+					{
+						"isvu_sifra": 92978,  
+						"naziv": "Građa računala", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 929781, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 929782, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 929783,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 45691,  
+						"naziv": "Operacijski sustavi", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456911, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 456912, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 456913,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 61519,  
+						"naziv": "Interpretacija programa", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 615191, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 615192, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 615193,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 45696,  
+						"naziv": "Kombinatorika", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456961, 
+								"status": "obavljen", 
+								"rezultat": "55%"
+							}, 
+							{ 
+								"ispit_id": 456962, 
+								"status": "obavljen", 
+								"rezultat": "64%"
+							}, 
+							{ 
+								"ispit_id": 456963,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 92953,  
+						"naziv": "Računalna grafika", 
+						"ects_bodovi": 4,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 929531, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 929532, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 929533,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					}
+				]
+			},
+			{
+				"jmbag": 1191238000, 
+				"ime": "Mirko", 
+				"prezime": "Mirić", 
+				"razina":"diplomski", 
+				"smjer":"Računarstvo i matematika", 
+				"kolegiji": [ 
+					{
+						"isvu_sifra": 45688,  
+						"naziv": "Umjetna inteligencija", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456881, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 456882, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 456883,
+								"status": "obavljen",
+								"rezultat": "50%"
+							} 
+						], 
+						"ocjena": "2"
+					},
+					{
+						"isvu_sifra": 45689,  
+						"naziv": "Matematička logika", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456891, 
+								"status": "obavljen", 
+								"rezultat": "40%"
+							}, 
+							{ 
+								"ispit_id": 456892, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 456893,
+								"status": "obavljen",
+								"rezultat": "50%"
+							} 
+						], 
+						"ocjena": "2"
+					},
+					{
+						"isvu_sifra": 45691,  
+						"naziv": "Operacijski sustavi",
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456911, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 456912, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 456913,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 61519,  
+						"naziv": "Interpretacija programa", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 615191, 
+								"status": "obavljen", 
+								"rezultat": "50%"
+							}, 
+							{ 
+								"ispit_id": 615192, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 615193,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 36905,  
+						"naziv": "Vjerojatnost", 
+						"ects_bodovi": 7,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369051, 
+								"status": "obavljen", 
+								"rezultat": "62%"
+							}, 
+							{ 
+								"ispit_id": 369052, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 369053,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 36904,  
+						"naziv": "Diskretna matematika", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369041, 
+								"status": "obavljen", 
+								"rezultat": "46%"
+							}, 
+							{ 
+								"ispit_id": 369042, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 369043,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 24206,  
+						"naziv": "Strukture podataka i algoritmi", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 242061, 
+								"status": "obavljen", 
+								"rezultat": "73%"
+							}, 
+							{ 
+								"ispit_id": 242062, 
+								"status": "obavljen", 
+								"rezultat": "65%"
+							}, 
+							{ 
+								"ispit_id": 242063,
+								"status": "obavljen",
+								"rezultat": "60%"
+							} 
+						], 
+						"ocjena": "3"
+					},
+					{
+						"isvu_sifra": 36920,  
+						"naziv": "Iterativne metode", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369201, 
+								"status": "obavljen", 
+								"rezultat": "57%"
+							}, 
+							{ 
+								"ispit_id": 369202, 
+								"status": "obavljen", 
+								"rezultat": "52%"
+							}, 
+							{ 
+								"ispit_id": 369203,
+								"status": "obavljen",
+								"rezultat": "48%"
+							} 
+						], 
+						"ocjena": "2"
+					}
+				]
+			},
+			{
+				"jmbag": 1191235888, 
+				"ime": "Filip", 
+				"prezime": "Filipić", 
+				"razina":"diplomski", 
+				"smjer":"Računarstvo i matematika", 
+				"kolegiji": [ 
+					{
+						"isvu_sifra": 45693,  
+						"naziv": "Baze podataka", 
+						"ects_bodovi": 4,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456931, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 456932, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 456933,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 45694,  
+						"naziv": "Objektno programiranje", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456941, 
+								"status": "obavljen", 
+								"rezultat": "90%"
+							}, 
+							{ 
+								"ispit_id": 456942, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 456943,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 45696,  
+						"naziv": "Kombinatorika", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456961, 
+								"status": "obavljen", 
+								"rezultat": "90%"
+							}, 
+							{ 
+								"ispit_id": 456962, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 456963,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": "3"
+					},
+					{
+						"isvu_sifra": 45704,  
+						"naziv": "Operacijska istraživanja", 
+						"ects_bodovi": 4,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 457041, 
+								"status": "obavljen", 
+								"rezultat": "90%"
+							}, 
+							{ 
+								"ispit_id": 457042, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 457043,
+								"status": "obavljen",
+								"rezultat": "50%"
+							} 
+						], 
+						"ocjena": "3"
+					},
+					{
+						"isvu_sifra": 45595,  
+						"naziv": "Računarski praktikum 2", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 455951, 
+								"status": "obavljen", 
+								"rezultat": "72%"
+							}, 
+							{ 
+								"ispit_id": 455952, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 455953,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 24206,  
+						"naziv": "Strukture podataka i algoritmi", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 242061, 
+								"status": "obavljen", 
+								"rezultat": "58%"
+							}, 
+							{ 
+								"ispit_id": 242062, 
+								"status": "obavljen", 
+								"rezultat": "64%"
+							}, 
+							{ 
+								"ispit_id": 242063,
+								"status": "obavljen",
+								"rezultat": "72%%"
+							} 
+						], 
+						"ocjena": "3"
+					},
+					{
+						"isvu_sifra": 36920,  
+						"naziv": "Iterativne metode", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369201, 
+								"status": "obavljen", 
+								"rezultat": "73%"
+							}, 
+							{ 
+								"ispit_id": 369202, 
+								"status": "obavljen", 
+								"rezultat": "67%"
+							}, 
+							{ 
+								"ispit_id": 369203,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 33453,  
+						"naziv": "Euklidski prostori", 
+						"ects_bodovi": 4,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 334531, 
+								"status": "obavljen", 
+								"rezultat": "82%"
+							}, 
+							{ 
+								"ispit_id": 334532, 
+								"status": "obavljen", 
+								"rezultat": "86%"
+							}, 
+							{ 
+								"ispit_id": 334533,
+								"status": "obavljen",
+								"rezultat": "78%"
+							} 
+						], 
+						"ocjena": "4"
+					},
+					{
+						"isvu_sifra": 92978,  
+						"naziv": "Građa računala", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 929781, 
+								"status": "obavljen", 
+								"rezultat": "76%"
+							}, 
+							{ 
+								"ispit_id": 929782, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 929783,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 61519,  
+						"naziv": "Interpretacija programa", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 615191, 
+								"status": "obavljen", 
+								"rezultat": "64%"
+							}, 
+							{ 
+								"ispit_id": 615192, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 615193,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					}
+				]
+			},
+			{
+				"jmbag": 1191235988, 
+				"ime": "Josip", 
+				"prezime": "Josić", 
+				"razina":"diplomski", 
+				"smjer":"Računarstvo i matematika", 
+				"kolegiji": [ 
+					{
+						"isvu_sifra": 45693,  
+						"naziv": "Baze podataka", 
+						"ects_bodovi": 4,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456931, 
+								"status": "obavljen", 
+								"rezultat": "80%"
+							}, 
+							{ 
+								"ispit_id": 456932, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 456933,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 45694,  
+						"naziv": "Objektno programiranje", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456941, 
+								"status": "obavljen", 
+								"rezultat": "50%"
+							}, 
+							{ 
+								"ispit_id": 456942, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 456943,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 92953,  
+						"naziv": "Računalna grafika", 
+						"ects_bodovi": 4,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 929531, 
+								"status": "obavljen", 
+								"rezultat": "30%"
+							}, 
+							{ 
+								"ispit_id": 929532, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 929533,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 92955,  
+						"naziv": "Konačne geometrije", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 929551, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 929552, 
+								"status": "obavljen", 
+								"rezultat": "56%"
+							}, 
+							{ 
+								"ispit_id": 929553,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 92979,  
+						"naziv": "Oblikovanje i analiza algoritama", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 929791, 
+								"status": "obavljen", 
+								"rezultat": "45%"
+							}, 
+							{ 
+								"ispit_id": 929792, 
+								"status": "obavljen", 
+								"rezultat": "55%"
+							}, 
+							{ 
+								"ispit_id": 929793,
+								"status": "obavljen",
+								"rezultat": "55%"
+							} 
+						], 
+						"ocjena": "2"
+					},
+					{
+						"isvu_sifra": 92949,  
+						"naziv": "Mreže računala", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 929491, 
+								"status": "obavljen", 
+								"rezultat": "90%"
+							}, 
+							{ 
+								"ispit_id": 929492, 
+								"status": "obavljen", 
+								"rezultat": "84%"
+							}, 
+							{ 
+								"ispit_id": 929493,
+								"status": "obavljen",
+								"rezultat": "95%"
+							} 
+						], 
+						"ocjena": "5"
+					},
+					{
+						"isvu_sifra": 45696,  
+						"naziv": "Kombinatorika", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456961, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 456962, 
+								"status": "obavljen", 
+								"rezultat": "74%"
+							}, 
+							{ 
+								"ispit_id": 456963,
+								"status": "obavljen",
+								"rezultat": "80%"
+							} 
+						], 
+						"ocjena": "4"
+					},
+					{
+						"isvu_sifra": 24206,  
+						"naziv": "Strukture podataka i algoritmi", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 242061, 
+								"status": "obavljen", 
+								"rezultat": "63%"
+							}, 
+							{ 
+								"ispit_id": 242062, 
+								"status": "obavljen", 
+								"rezultat": "68%"
+							}, 
+							{ 
+								"ispit_id": 242063,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					}
+				]
+			},
+			{
+				"jmbag": 1191235998, 
+				"ime": "Ivana", 
+				"prezime": "Ivanić", 
+				"razina":"diplomski", 
+				"smjer":"Računarstvo i matematika", 
+				"kolegiji": [ 
+					{
+						"isvu_sifra": 45693,  
+						"naziv": "Baze podataka", 
+						"ects_bodovi": 4,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456931, 
+								"status": "obavljen", 
+								"rezultat": "65%"
+							}, 
+							{ 
+								"ispit_id": 456932, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 456933,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 45694,  
+						"naziv": "Objektno programiranje", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456941, 
+								"status": "obavljen", 
+								"rezultat": "75%"
+							}, 
+							{ 
+								"ispit_id": 456942, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 456943,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 45704,  
+						"naziv": "Operacijska istraživanja", 
+						"ects_bodovi": 4,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 457041, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 457042, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 457043,
+								"status": "obavljen",
+								"rezultat": "70%"
+							} 
+						], 
+						"ocjena": "3"
+					},
+					{
+						"isvu_sifra": 92955,  
+						"naziv": "Konačne geometrije", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 929551, 
+								"status": "obavljen", 
+								"rezultat": "85%"
+							}, 
+							{ 
+								"ispit_id": 929552, 
+								"status": "obavljen", 
+								"rezultat": "68%"
+							}, 
+							{ 
+								"ispit_id": 929553,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 24206,  
+						"naziv": "Strukture podataka i algoritmi", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 242061, 
+								"status": "obavljen", 
+								"rezultat": "65%"
+							}, 
+							{ 
+								"ispit_id": 242062, 
+								"status": "obavljen", 
+								"rezultat": "82%"
+							}, 
+							{ 
+								"ispit_id": 242063,
+								"status": "prijavljen",
+								"rezultat": "85%"
+							} 
+						], 
+						"ocjena": "4"
+					},
+					{
+						"isvu_sifra": 45595,  
+						"naziv": "Računarski praktikum 2", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 455951, 
+								"status": "obavljen", 
+								"rezultat": "80%"
+							}, 
+							{ 
+								"ispit_id": 455952, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 455953,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 31422,  
+						"naziv": "Bioinformatika", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 314221, 
+								"status": "obavljen", 
+								"rezultat": "80%"
+							}, 
+							{ 
+								"ispit_id": 314222, 
+								"status": "obavljen", 
+								"rezultat": "92%"
+							}, 
+							{ 
+								"ispit_id": 314223,
+								"status": "obavljen",
+								"rezultat": "96%"
+							} 
+						], 
+						"ocjena": "5"
+					},
+					{
+						"isvu_sifra": 92979,  
+						"naziv": "Oblikovanje i analiza algoritama", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 929791, 
+								"status": "obavljen", 
+								"rezultat": "50%"
+							}, 
+							{ 
+								"ispit_id": 929792, 
+								"status": "obavljen", 
+								"rezultat": "45%"
+							}, 
+							{ 
+								"ispit_id": 929793,
+								"status": "obavljen",
+								"rezultat": "60%"
+							} 
+						], 
+						"ocjena": "2"
+					},
+					{
+						"isvu_sifra": 45688,  
+						"naziv": "Umjetna inteligencija", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 456881, 
+								"status": "obavljen", 
+								"rezultat": "92%"
+							}, 
+							{ 
+								"ispit_id": 456882, 
+								"status": "obavljen", 
+								"rezultat": "84%"
+							}, 
+							{ 
+								"ispit_id": 456883,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					}
+				]
+			},
+			{
+				"jmbag": 1191233098, 
+				"ime": "Iris", 
+				"prezime": "Irisić", 
+				"razina":"preddiplomski", 
+				"smjer":"Matematika", 
+				"kolegiji": [ 
+					{
+						"isvu_sifra": 21498,  
+						"naziv": "Matematička analiza 1", 
+						"ects_bodovi": 8,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 214981, 
+								"status": "obavljen", 
+								"rezultat": "35%"
+							}, 
+							{ 
+								"ispit_id": 214982, 
+								"status": "obavljen", 
+								"rezultat": "65%"
+							}, 
+							{ 
+								"ispit_id": 214983,
+								"status": "obavljen",
+								"rezultat": "60%"
+							} 
+						], 
+						"ocjena": "2"
+					},
+					{
+						"isvu_sifra": 21501,  
+						"naziv": "Linearna algebra 1", 
+						"ects_bodovi": 8,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 215011, 
+								"status": "obavljen", 
+								"rezultat": "55%"
+							}, 
+							{ 
+								"ispit_id": 215012, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 215013,
+								"status": "obavljen",
+								"rezultat": "60%"
+							} 
+						], 
+						"ocjena": "3"
+					},
+					{
+						"isvu_sifra": 36901,  
+						"naziv": "Programiranje 1", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369011, 
+								"status": "obavljen", 
+								"rezultat": "90%"
+							}, 
+							{ 
+								"ispit_id": 369012, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 369013,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": "4"
+					},
+					{
+						"isvu_sifra": 21504,  
+						"naziv": "Elementarna matematika 1", 
+						"ects_bodovi": 8,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 215041, 
+								"status": "obavljen", 
+								"rezultat": "75%"
+							}, 
+							{ 
+								"ispit_id": 215042, 
+								"status": "obavljen", 
+								"rezultat": "63%"
+							}, 
+							{ 
+								"ispit_id": 215043,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 21508,  
+						"naziv": "Matematička analiza 2", 
+						"ects_bodovi": 9,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 215081, 
+								"status": "obavljen", 
+								"rezultat": "50%"
+							}, 
+							{ 
+								"ispit_id": 215082, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 215083,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 21515,  
+						"naziv": "Linearna algebra 2", 
+						"ects_bodovi": 9,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 215151, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 215152, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 215153,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 21518,  
+						"naziv": "Elementarna matematika 2", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 215181, 
+								"status": "obavljen", 
+								"rezultat": "75%"
+							}, 
+							{ 
+								"ispit_id": 215182, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 215183,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 36903,  
+						"naziv": "Programiranje 2", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369031, 
+								"status": "obavljen", 
+								"rezultat": "63%"
+							}, 
+							{ 
+								"ispit_id": 369032, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 369033,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 31418,  
+						"naziv": "Fizika 1", 
+						"ects_bodovi": 4,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 314181, 
+								"status": "obavljen", 
+								"rezultat": "82%"
+							}, 
+							{ 
+								"ispit_id": 314182, 
+								"status": "obavljen", 
+								"rezultat": "75%"
+							}, 
+							{ 
+								"ispit_id": 314183,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 31419,  
+						"naziv": "Fizika 2", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 314191, 
+								"status": "obavljen", 
+								"rezultat": "90%"
+							}, 
+							{ 
+								"ispit_id": 314192, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 314193,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					}
+				]
+			},
+			{
+				"jmbag": 1191234025, 
+				"ime": "Ela", 
+				"prezime": "Elić", 
+				"razina":"preddiplomski", 
+				"smjer":"Matematika", 
+				"kolegiji": [ 
+					{
+						"isvu_sifra": 21498,  
+						"naziv": "Matematička analiza 1", 
+						"ects_bodovi": 8,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 214981, 
+								"status": "obavljen", 
+								"rezultat": "45%"
+							}, 
+							{ 
+								"ispit_id": 214982, 
+								"status": "obavljen", 
+								"rezultat": "72%"
+							}, 
+							{ 
+								"ispit_id": 214983,
+								"status": "obavljen",
+								"rezultat": "65%"
+							} 
+						], 
+						"ocjena": "3"
+					},
+					{
+						"isvu_sifra": 36905,  
+						"naziv": "Vjerojatnost", 
+						"ects_bodovi": 7,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369051, 
+								"status": "obavljen", 
+								"rezultat": "50%"
+							}, 
+							{ 
+								"ispit_id": 369052, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 369053,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 36901,  
+						"naziv": "Programiranje 1", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369011, 
+								"status": "obavljen", 
+								"rezultat": "80%"
+							}, 
+							{ 
+								"ispit_id": 369012, 
+								"status": "obavljen", 
+								"rezultat": "40%"
+							}, 
+							{ 
+								"ispit_id": 369013,
+								"status": "obavljen",
+								"rezultat": "60%"
+							} 
+						], 
+						"ocjena": "3"
+					},
+					{
+						"isvu_sifra": 36904,  
+						"naziv": "Diskretna matematika", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369041, 
+								"status": "obavljen", 
+								"rezultat": "65%"
+							}, 
+							{ 
+								"ispit_id": 369042, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 369043,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 92892,  
+						"naziv": "Teorija brojeva", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 928921, 
+								"status": "obavljen", 
+								"rezultat": "95%"
+							}, 
+							{ 
+								"ispit_id": 928922, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 928923,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 31418,  
+						"naziv": "Fizika 1", 
+						"ects_bodovi": 4,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 314181, 
+								"status": "obavljen", 
+								"rezultat": "82%"
+							}, 
+							{ 
+								"ispit_id": 314182, 
+								"status": "obavljen", 
+								"rezultat": "74%"
+							}, 
+							{ 
+								"ispit_id": 314183,
+								"status": "obavljen",
+								"rezultat": "80%"
+							} 
+						], 
+						"ocjena": "4"
+					},
+					{
+						"isvu_sifra": 21508,  
+						"naziv": "Matematička analiza 2", 
+						"ects_bodovi": 9,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 215081, 
+								"status": "obavljen", 
+								"rezultat": "53%"
+							}, 
+							{ 
+								"ispit_id": 215082, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 215083,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 36903,  
+						"naziv": "Programiranje 2", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369031, 
+								"status": "obavljen", 
+								"rezultat": "74%"
+							}, 
+							{ 
+								"ispit_id": 369032, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 369033,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 33453,  
+						"naziv": "Euklidski prostori", 
+						"ects_bodovi": 4,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 334531, 
+								"status": "obavljen", 
+								"rezultat": "80%"
+							}, 
+							{ 
+								"ispit_id": 334532, 
+								"status": "obavljen", 
+								"rezultat": "84%"
+							}, 
+							{ 
+								"ispit_id": 334533,
+								"status": "obavljen",
+								"rezultat": "70%"
+							} 
+						], 
+						"ocjena": "4"
+					}
+				]
+			},
+			{
+				"jmbag": 1191235027, 
+				"ime": "Mislav", 
+				"prezime": "Mislavić", 
+				"razina":"preddiplomski", 
+				"smjer":"Matematika", 
+				"kolegiji": [ 
+					{
+						"isvu_sifra": 21498,  
+						"naziv": "Matematička analiza 1", 
+						"ects_bodovi": 8,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 214981, 
+								"status": "obavljen", 
+								"rezultat": "54%"
+							}, 
+							{ 
+								"ispit_id": 214982, 
+								"status": "obavljen", 
+								"rezultat": "78%"
+							}, 
+							{ 
+								"ispit_id": 214983,
+								"status": "obavljen",
+								"rezultat": "94%"
+							} 
+						], 
+						"ocjena": "4"
+					},
+					{
+						"isvu_sifra": 36905,  
+						"naziv": "Vjerojatnost", 
+						"ects_bodovi": 7,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369051, 
+								"status": "obavljen", 
+								"rezultat": "63%"
+							}, 
+							{ 
+								"ispit_id": 369052, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 369053,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 36928,  
+						"naziv": "Modeli geometrije", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369281, 
+								"status": "obavljen", 
+								"rezultat": "62%"
+							}, 
+							{ 
+								"ispit_id": 369282, 
+								"status": "obavljen", 
+								"rezultat": "86%"
+							}, 
+							{ 
+								"ispit_id": 369283,
+								"status": "obavljen",
+								"rezultat": "90%"
+							} 
+						], 
+						"ocjena": "4"
+					},
+					{
+						"isvu_sifra": 36904,  
+						"naziv": "Diskretna matematika", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369041, 
+								"status": "obavljen", 
+								"rezultat": "72%"
+							}, 
+							{ 
+								"ispit_id": 369042, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 369043,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 92892,  
+						"naziv": "Teorija brojeva", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 928921, 
+								"status": "obavljen", 
+								"rezultat": "85%"
+							}, 
+							{ 
+								"ispit_id": 928922, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 928923,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 21508,  
+						"naziv": "Matematička analiza 2", 
+						"ects_bodovi": 9,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 215081, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 215082, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 215083,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 21501,  
+						"naziv": "Linearna algebra 1", 
+						"ects_bodovi": 8,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 215011, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 215012, 
+								"status": "obavljen", 
+								"rezultat": "53%"
+							}, 
+							{ 
+								"ispit_id": 215013,
+								"status": "obavljen",
+								"rezultat": "40%"
+							} 
+						], 
+						"ocjena": "2"
+					},
+					{
+						"isvu_sifra": 21504,  
+						"naziv": "Elementarna matematika 1", 
+						"ects_bodovi": 8,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 215041, 
+								"status": "obavljen", 
+								"rezultat": "83%"
+							}, 
+							{ 
+								"ispit_id": 215042, 
+								"status": "obavljen", 
+								"rezultat": "76%"
+							}, 
+							{ 
+								"ispit_id": 215043,
+								"status": "obavljen",
+								"rezultat": "80%"
+							} 
+						], 
+						"ocjena": "4"
+					},
+					{
+						"isvu_sifra": 21518,  
+						"naziv": "Elementarna matematika 2", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 215181, 
+								"status": "obavljen", 
+								"rezultat": "68%"
+							}, 
+							{ 
+								"ispit_id": 215182, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 215183,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					}
+				]
+			},
+			{
+				"jmbag": 1191236155, 
+				"ime": "Boris", 
+				"prezime": "Borisić", 
+				"razina":"preddiplomski", 
+				"smjer":"Matematika", 
+				"kolegiji": [ 
+					{
+						"isvu_sifra": 21498,  
+						"naziv": "Matematička analiza 1", 
+						"ects_bodovi": 8,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 214981, 
+								"status": "obavljen", 
+								"rezultat": "25%"
+							}, 
+							{ 
+								"ispit_id": 214982, 
+								"status": "obavljen", 
+								"rezultat": "15%"
+							}, 
+							{ 
+								"ispit_id": 214983,
+								"status": "obavljen",
+								"rezultat": "30%"
+							} 
+						], 
+						"ocjena": "1"
+					},
+					{
+						"isvu_sifra": 21501,  
+						"naziv": "Linearna algebra 1", 
+						"ects_bodovi": 8,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 215011, 
+								"status": "obavljen", 
+								"rezultat": "40%"
+							}, 
+							{ 
+								"ispit_id": 215012, 
+								"status": "obavljen", 
+								"rezultat": "20%"
+							}, 
+							{ 
+								"ispit_id": 215013,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": "1"
+					},
+					{
+						"isvu_sifra": 36901,  
+						"naziv": "Programiranje 1", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369011, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 369012, 
+								"status": "obavljen", 
+								"rezultat": "40%"
+							}, 
+							{ 
+								"ispit_id": 369013,
+								"status": "obavljen",
+								"rezultat": "60%"
+							} 
+						], 
+						"ocjena": "3"
+					},
+					{
+						"isvu_sifra": 21504,  
+						"naziv": "Elementarna matematika 1", 
+						"ects_bodovi": 8,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 215041, 
+								"status": "obavljen", 
+								"rezultat": "55%"
+							}, 
+							{ 
+								"ispit_id": 215042, 
+								"status": "obavljen", 
+								"rezultat": "48%"
+							}, 
+							{ 
+								"ispit_id": 215043,
+								"status": "obavljen",
+								"rezultat": "50"
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 21515,  
+						"naziv": "Linearna algebra 2", 
+						"ects_bodovi": 9,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 215151, 
+								"status": "obavljen", 
+								"rezultat": "65%"
+							}, 
+							{ 
+								"ispit_id": 215152, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 215153,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 21518,  
+						"naziv": "Elementarna matematika 2", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 215181, 
+								"status": "obavljen", 
+								"rezultat": "75%"
+							}, 
+							{ 
+								"ispit_id": 215182, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 215183,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 36903,  
+						"naziv": "Programiranje 2", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369031, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 369032, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 369033,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 31422,  
+						"naziv": "Bioinformatika", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 314221, 
+								"status": "obavljen", 
+								"rezultat": "94%"
+							}, 
+							{ 
+								"ispit_id": 314222, 
+								"status": "obavljen", 
+								"rezultat": "90%"
+							}, 
+							{ 
+								"ispit_id": 314223,
+								"status": "obavljen",
+								"rezultat": "92%"
+							} 
+						], 
+						"ocjena": "5"
+					}
+				]
+			},
+			{
+				"jmbag": 1191237325, 
+				"ime": "Bojan", 
+				"prezime": "Bojanović", 
+				"razina":"preddiplomski", 
+				"smjer":"Matematika", 
+				"kolegiji": [ 
+					{
+						"isvu_sifra": 45595,  
+						"naziv": "Računarski praktikum 2", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 455951, 
+								"status": "obavljen", 
+								"rezultat": "65%"
+							}, 
+							{ 
+								"ispit_id": 455952, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 455953,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 24206,  
+						"naziv": "Strukture podataka i algoritmi", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 242061, 
+								"status": "obavljen", 
+								"rezultat": "50%"
+							}, 
+							{ 
+								"ispit_id": 242062, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 242063,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 31425,  
+						"naziv": "Algebarske strukture", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 314251, 
+								"status": "obavljen", 
+								"rezultat": "64%"
+							}, 
+							{ 
+								"ispit_id": 314252, 
+								"status": "obavljen", 
+								"rezultat": "45%"
+							}, 
+							{ 
+								"ispit_id": 314253,
+								"status": "obavljen",
+								"rezultat": "68%"
+							} 
+						], 
+						"ocjena": "3"
+					},
+					{
+						"isvu_sifra": 36911,  
+						"naziv": "Vektorski prostori", 
+						"ects_bodovi": 7,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369111, 
+								"status": "obavljen", 
+								"rezultat": "72%"
+							}, 
+							{ 
+								"ispit_id": 369112, 
+								"status": "obavljen", 
+								"rezultat": "66%"
+							}, 
+							{ 
+								"ispit_id": 369113,
+								"status": "obavljen",
+								"rezultat": "78%"
+							} 
+						], 
+						"ocjena": "4"
+					},
+					{
+						"isvu_sifra": 36905,  
+						"naziv": "Vjerojatnost", 
+						"ects_bodovi": 7,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369051, 
+								"status": "obavljen", 
+								"rezultat": "80%"
+							}, 
+							{ 
+								"ispit_id": 369052, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 369053,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 92892,  
+						"naziv": "Teorija brojeva", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 928921, 
+								"status": "obavljen", 
+								"rezultat": "95%"
+							}, 
+							{ 
+								"ispit_id": 928922, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 928923,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 33453,  
+						"naziv": "Euklidski prostori", 
+						"ects_bodovi": 4,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 334531, 
+								"status": "obavljen", 
+								"rezultat": "90%"
+							}, 
+							{ 
+								"ispit_id": 334532, 
+								"status": "obavljen", 
+								"rezultat": "85%"
+							}, 
+							{ 
+								"ispit_id": 334533,
+								"status": "obavljen",
+								"rezultat": "98%"
+							} 
+						], 
+						"ocjena": "5"
+					},
+					{
+						"isvu_sifra": 31418,  
+						"naziv": "Fizika 1", 
+						"ects_bodovi": 4,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 314181, 
+								"status": "obavljen", 
+								"rezultat": "80%"
+							}, 
+							{ 
+								"ispit_id": 314182, 
+								"status": "obavljen", 
+								"rezultat": "75%"
+							}, 
+							{ 
+								"ispit_id": 314183,
+								"status": "obavljen",
+								"rezultat": "72%"
+							} 
+						], 
+						"ocjena": "4"
+					}
+				]
+			},
+			{
+				"jmbag": 1191234965, 
+				"ime": "Aleks", 
+				"prezime": "Aleksić", 
+				"razina":"diplomski", 
+				"smjer":"Matematička statistika", 
+				"kolegiji": [ 
+					{
+						"isvu_sifra": 36920,  
+						"naziv": "Iterativne metode", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369201, 
+								"status": "obavljen", 
+								"rezultat": "65%"
+							}, 
+							{ 
+								"ispit_id": 369202, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 369203,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 36921,  
+						"naziv": "Markovljevi lanci", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369211, 
+								"status": "obavljen", 
+								"rezultat": "50%"
+							}, 
+							{ 
+								"ispit_id": 369212, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 369213,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 31422,  
+						"naziv": "Bioinformatika", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 314221, 
+								"status": "obavljen", 
+								"rezultat": "84%"
+							}, 
+							{ 
+								"ispit_id": 314222, 
+								"status": "obavljen", 
+								"rezultat": "85%"
+							}, 
+							{ 
+								"ispit_id": 314223,
+								"status": "obavljen",
+								"rezultat": "98%"
+							} 
+						], 
+						"ocjena": "5"
+					},
+					{
+						"isvu_sifra": 33220,  
+						"naziv": "Mjera i integral", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 332201, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 332202, 
+								"status": "obavljen", 
+								"rezultat": "80%"
+							}, 
+							{ 
+								"ispit_id": 332203,
+								"status": "obavljen",
+								"rezultat": "76%"
+							} 
+						], 
+						"ocjena": "4"
+					},
+					{
+						"isvu_sifra": 36901,  
+						"naziv": "Programiranje 1", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369011, 
+								"status": "obavljen", 
+								"rezultat": "64%"
+							}, 
+							{ 
+								"ispit_id": 369012, 
+								"status": "obavljen", 
+								"rezultat": "48%"
+							}, 
+							{ 
+								"ispit_id": 369013,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 31425,  
+						"naziv": "Algebarske strukture", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 314251, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 314252, 
+								"status": "obavljen", 
+								"rezultat": "75%"
+							}, 
+							{ 
+								"ispit_id": 314253,
+								"status": "obavljen",
+								"rezultat": "80%"
+							} 
+						], 
+						"ocjena": "4"
+					},
+					{
+						"isvu_sifra": 36903,  
+						"naziv": "Programiranje 2", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369031, 
+								"status": "obavljen", 
+								"rezultat": "50%"
+							}, 
+							{ 
+								"ispit_id": 369032, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 369033,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					}
+				]
+			},
+			{
+				"jmbag": 1191238415, 
+				"ime": "Elena", 
+				"prezime": "Elenić", 
+				"razina":"preddiplomski", 
+				"smjer":"Matematika", 
+				"kolegiji": [ 
+					{
+						"isvu_sifra": 21508,  
+						"naziv": "Matematička analiza 2", 
+						"ects_bodovi": 9,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 215081, 
+								"status": "obavljen", 
+								"rezultat": "58%"
+							}, 
+							{ 
+								"ispit_id": 215082, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 215083,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 21515,  
+						"naziv": "Linearna algebra 2", 
+						"ects_bodovi": 9,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 215151, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 215152, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 215153,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 21518,  
+						"naziv": "Elementarna matematika 2", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 215181, 
+								"status": "obavljen", 
+								"rezultat": "43%"
+							}, 
+							{ 
+								"ispit_id": 215182, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 215183,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 36903,  
+						"naziv": "Programiranje 2", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369031, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 369032, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 369033,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 31419,  
+						"naziv": "Fizika 2", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 314191, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 314192, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 314193,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 21498,  
+						"naziv": "Matematička analiza 1", 
+						"ects_bodovi": 8,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 214981, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 214982, 
+								"status": "obavljen", 
+								"rezultat": "50%"
+							}, 
+							{ 
+								"ispit_id": 214983,
+								"status": "obavljen",
+								"rezultat": "60%"
+							} 
+						], 
+						"ocjena": "3"
+					},
+					{
+						"isvu_sifra": 21501,  
+						"naziv": "Linearna algebra 1", 
+						"ects_bodovi": 8,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 215011, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 215012, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 215013,
+								"status": "obavljen",
+								"rezultat": "60%"
+							} 
+						], 
+						"ocjena": "3"
+					},
+					{
+						"isvu_sifra": 21504,  
+						"naziv": "Elementarna matematika 1", 
+						"ects_bodovi": 8,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 215041, 
+								"status": "obavljen", 
+								"rezultat": "84%"
+							}, 
+							{ 
+								"ispit_id": 215042, 
+								"status": "obavljen", 
+								"rezultat": "68%"
+							}, 
+							{ 
+								"ispit_id": 215043,
+								"status": "obavljen",
+								"rezultat": "90%"
+							} 
+						], 
+						"ocjena": "4"
+					}
+				]
+			},
+			{
+				"jmbag": 1191237532, 
+				"ime": "Dora", 
+				"prezime": "Dorić", 
+				"razina":"preddiplomski", 
+				"smjer":"Matematika", 
+				"kolegiji": [ 
+					{
+						"isvu_sifra": 33220,  
+						"naziv": "Mjera i integral", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 332201, 
+								"status": "obavljen", 
+								"rezultat": "38%"
+							}, 
+							{ 
+								"ispit_id": 332202, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 332203,
+								"status": "obavljen",
+								"rezultat": "55%"
+							} 
+						], 
+						"ocjena": "2"
+					},
+					{
+						"isvu_sifra": 97015,  
+						"naziv": "Statistika", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 970151, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 970152, 
+								"status": "obavljen", 
+								"rezultat": "80%"
+							}, 
+							{ 
+								"ispit_id": 970153,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 31418,  
+						"naziv": "Fizika 1", 
+						"ects_bodovi": 4,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 314181, 
+								"status": "obavljen", 
+								"rezultat": "73%"
+							}, 
+							{ 
+								"ispit_id": 314182, 
+								"status": "obavljen", 
+								"rezultat": "69%"
+							}, 
+							{ 
+								"ispit_id": 31413,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 33453,  
+						"naziv": "Euklidski prostori", 
+						"ects_bodovi": 4,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 334531, 
+								"status": "obavljen", 
+								"rezultat": "80%"
+							}, 
+							{ 
+								"ispit_id": 334532, 
+								"status": "obavljen", 
+								"rezultat": "90%"
+							}, 
+							{ 
+								"ispit_id": 334533,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": "4"
+					},
+					{
+						"isvu_sifra": 36911,  
+						"naziv": "Vektorski prostori", 
+						"ects_bodovi": 7,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369111, 
+								"status": "obavljen", 
+								"rezultat": "80%"
+							}, 
+							{ 
+								"ispit_id": 369112, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 369113,
+								"status": "obavljen",
+								"rezultat": "80%"
+							} 
+						], 
+						"ocjena": "4"
+					},
+					{
+						"isvu_sifra": 31425,  
+						"naziv": "Algebarske strukture", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 314251, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 314252, 
+								"status": "obavljen", 
+								"rezultat": "50%"
+							}, 
+							{ 
+								"ispit_id": 314253,
+								"status": "obavljen",
+								"rezultat": "70%"
+							} 
+						], 
+						"ocjena": "3"
+					},
+					{
+						"isvu_sifra": 31419,  
+						"naziv": "Fizika 2", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 314191, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 314192, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 314193,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 21515,  
+						"naziv": "Linearna algebra 2", 
+						"ects_bodovi": 9,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 215151, 
+								"status": "obavljen", 
+								"rezultat": "75%"
+							}, 
+							{ 
+								"ispit_id": 215152, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 215153,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 36921,  
+						"naziv": "Markovljevi lanci", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369211, 
+								"status": "obavljen", 
+								"rezultat": "65%"
+							}, 
+							{ 
+								"ispit_id": 369212, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 369213,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					}
+				]
+			},
+			{
+				"jmbag": 1191235804, 
+				"ime": "Karlo", 
+				"prezime": "Karlić", 
+				"razina":"diplomski", 
+				"smjer":"Matematička statistika", 
+				"kolegiji": [ 
+					{
+						"isvu_sifra": 36920,  
+						"naziv": "Iterativne metode", 
+						"ects_bodovi": 5,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369201, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 369202, 
+								"status": "obavljen", 
+								"rezultat": "65%"
+							}, 
+							{ 
+								"ispit_id": 369203,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 36921,  
+						"naziv": "Markovljevi lanci", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369211, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 369212, 
+								"status": "prijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 369213,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 31422,  
+						"naziv": "Bioinformatika", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 314221, 
+								"status": "obavljen", 
+								"rezultat": "90%"
+							}, 
+							{ 
+								"ispit_id": 314222, 
+								"status": "obavljen", 
+								"rezultat": "96%"
+							}, 
+							{ 
+								"ispit_id": 314223,
+								"status": "obavljen",
+								"rezultat": "87%"
+							} 
+						], 
+						"ocjena": "5"
+					},
+					{
+						"isvu_sifra": 33220,  
+						"naziv": "Mjera i integral", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 332201, 
+								"status": "obavljen", 
+								"rezultat": "30%"
+							}, 
+							{ 
+								"ispit_id": 332202, 
+								"status": "obavljen", 
+								"rezultat": "50%"
+							}, 
+							{ 
+								"ispit_id": 332203,
+								"status": "obavljen",
+								"rezultat": "65%"
+							} 
+						], 
+						"ocjena": "2"
+					},
+					{
+						"isvu_sifra": 36901,  
+						"naziv": "Programiranje 1", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369011, 
+								"status": "obavljen", 
+								"rezultat": "70%"
+							}, 
+							{ 
+								"ispit_id": 369012, 
+								"status": "obavljen", 
+								"rezultat": "56%"
+							}, 
+							{ 
+								"ispit_id": 369013,
+								"status": "prijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					},
+					{
+						"isvu_sifra": 36911,  
+						"naziv": "Vektorski prostori", 
+						"ects_bodovi": 7,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369111, 
+								"status": "obavljen", 
+								"rezultat": "67%"
+							}, 
+							{ 
+								"ispit_id": 369112, 
+								"status": "obavljen", 
+								"rezultat": "78%"
+							}, 
+							{ 
+								"ispit_id": 369113,
+								"status": "obavljen",
+								"rezultat": "86%"
+							} 
+						], 
+						"ocjena": "4"
+					},
+					{
+						"isvu_sifra": 36903,  
+						"naziv": "Programiranje 2", 
+						"ects_bodovi": 6,
+						"ispiti": [ 
+							{ 
+								"ispit_id": 369031, 
+								"status": "obavljen", 
+								"rezultat": "60%"
+							}, 
+							{ 
+								"ispit_id": 369032, 
+								"status": "neprijavljen", 
+								"rezultat": null
+							}, 
+							{ 
+								"ispit_id": 369033,
+								"status": "neprijavljen",
+								"rezultat": null
+							} 
+						], 
+						"ocjena": null
+					}
+				]
+			}
+		]
+	)
+	
+	/* ispis:
+		BulkWriteResult({
+				"writeErrors" : [ ],
+				"writeConcernErrors" : [ ],
+				"nInserted" : 20,
+				"nUpserted" : 0,
+				"nMatched" : 0,
+				"nModified" : 0,
+				"nRemoved" : 0,
+				"upserted" : [ ]
+		})
+	*/
+
+	
+
+	db.nastavnici.insert(
+		[
+			{"oib": 87920272420, "ime": "Slobodan", "prezime": "Ribarić", "kolegiji": [ {"isvu_sifra": 92978, "naziv": "Građa računala"} ]},
+			{"oib": 20335798653, "ime": "Saša", "prezime": "Singer", "kolegiji": [ {"isvu_sifra": 92979, "naziv": "Oblikovanje i analiza algoritama"}, {"isvu_sifra": 36901, "naziv": "Programiranje 1"}, {"isvu_sifra": 36903, "naziv": "Programiranje 2"} ]},
+			{"oib": 26559220386, "ime": "Luka", "prezime": "Grubišić", "kolegiji": [ {"isvu_sifra": 45688, "naziv": "Umjetna inteligencija"}, {"isvu_sifra": 92949, "naziv": "Mreže računala"} ]},
+			{"oib": 83712854685, "ime": "Mladen", "prezime": "Vuković", "kolegiji": [ {"isvu_sifra": 45689, "naziv": "Matematička logika"} ]},
+			{"oib": 39259887219, "ime": "Leonardo", "prezime": "Jelenković", "kolegiji": [ {"isvu_sifra": 45691, "naziv": "Operacijski sustavi"} ]},
+			{"oib": 62396901802, "ime": "Marko", "prezime": "Horvat", "kolegiji": [ {"isvu_sifra": 61519, "naziv": "Interpretacija programa"} ]},
+			{"oib": 58672041093, "ime": "Robert", "prezime": "Manger", "kolegiji": [ {"isvu_sifra": 45693, "naziv": "Baze podataka"}, {"isvu_sifra": 24206, "naziv": "Strukture podataka i algoritmi"} ]},
+			{"oib": 79820572417, "ime": "Mladen", "prezime": "Jurak", "kolegiji": [ {"isvu_sifra": 45694, "naziv": "Objektno programiranje"} ]},
+			{"oib": 07186299870, "ime": "Zvonimir", "prezime": "Bujanović", "kolegiji": [ {"isvu_sifra": 45595, "naziv": "Računarski praktikum 2"}, {"isvu_sifra": 21504, "naziv": "Elementarna matematika 1"}, {"isvu_sifra": 21518, "naziv": "Elementarna matematika 2"} ]},
+			{"oib": 25534233659, "ime": "Vedran", "prezime": "Krčadinac", "kolegiji": [ {"isvu_sifra": 45696, "naziv": "Kombinatorika"} ]},
+			{"oib": 74869409866, "ime": "Marko", "prezime": "Vrdoljak", "kolegiji": [ {"isvu_sifra": 45704, "naziv": "Operacijska istraživanja"} ]},
+			{"oib": 24846031037, "ime": "Tina", "prezime": "Bosner", "kolegiji": [ {"isvu_sifra": 92953, "naziv": "Računalna grafika"} ]},
+			{"oib": 43510326714, "ime": "Juraj", "prezime": "Šiftar", "kolegiji": [ {"isvu_sifra": 92955, "naziv": "Konačne geometrije"} ]},
+			{"oib": 14824362269, "ime": "Boris", "prezime": "Guljaš", "kolegiji": [ {"isvu_sifra": 21498, "naziv": "Matematička analiza 1"}, {"isvu_sifra": 21508, "naziv": "Matematička analiza 2"} ]},
+			{"oib": 34641126097, "ime": "Damir", "prezime": "Bakić", "kolegiji": [ {"isvu_sifra": 21501, "naziv": "Linearna algebra 1"}, {"isvu_sifra": 21515, "naziv": "Linearna algebra 2"} ]},
+			{"oib": 91889900720, "ime": "Zoran", "prezime": "Vondraček", "kolegiji": [ {"isvu_sifra": 36905, "naziv": "Vjerojatnost"} ]},
+			{"oib": 02235959970, "ime": "Marcela", "prezime": "Hanzer", "kolegiji": [ {"isvu_sifra": 36904, "naziv": "Diskretna matematika"}, {"isvu_sifra": 31425, "naziv": "Algebarske strukture"} ]},
+			{"oib": 21309038219, "ime": "Andrej", "prezime": "Dujella", "kolegiji": [ {"isvu_sifra": 92892, "naziv": "Teorija brojeva"} ]},
+			{"oib": 80617845652, "ime": "Mirko", "prezime": "Polonijo", "kolegiji": [ {"isvu_sifra": 36928, "naziv": "Modeli geometrije"}, {"isvu_sifra": 33453, "naziv": "Euklidski prostori"} ]},
+			{"oib": 70734762125, "ime": "Goran", "prezime": "Muić", "kolegiji": [ {"isvu_sifra": 36911, "naziv": "Vektorski prostori"} ]},
+			{"oib": 59573393871, "ime": "Vjeran", "prezime": "Hari", "kolegiji": [ {"isvu_sifra": 36920, "naziv": "Iterativne metode"} ]},
+			{"oib": 32888028857, "ime": "Vjekoslav", "prezime": "Kovač", "kolegiji": [ {"isvu_sifra": 36921, "naziv": "Markovljevi lanci"}, {"isvu_sifra": 33220, "naziv": "Mjera i integral"} ]},
+			{"oib": 16038302162, "ime": "Željko", "prezime": "Skoko", "kolegiji": [ {"isvu_sifra": 31418, "naziv": "Fizika 1"}, {"isvu_sifra": 31419, "naziv": "Fizika 2"} ]},
+			{"oib": 06788793731, "ime": "Pavle", "prezime": "Goldstein", "kolegiji": [ {"isvu_sifra": 31422, "naziv": "Bioinformatika"} ]},
+			{"oib": 56901033968, "ime": "Siniša", "prezime": "Slijepčević", "kolegiji": [ {"isvu_sifra": 97015, "naziv": "Statistika"} ]}
+		] 
+	)
+	
+	/*ispis: 
+		BulkWriteResult({
+				"writeErrors" : [ ],
+				"writeConcernErrors" : [ ],
+				"nInserted" : 25,
+				"nUpserted" : 0,
+				"nMatched" : 0,
+				"nModified" : 0,
+				"nRemoved" : 0,
+				"upserted" : [ ]
+		})
+	*/

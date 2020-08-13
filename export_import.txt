@@ -1,0 +1,59 @@
+kontejner nbp-mongo _pokrenut_
+stvaranje baze i kolekcije, db.kolegiji.insert(...) (...)
+
+*** EXPORT ***
+
+Izlaz iz mongo shella.
+> exit
+bye
+
+Idemo u bash shell (root@):
+$ docker exec -it nbp-mongo bash
+root@af5d31ba1b1b:/# mongoexport -d ispiti -c kolegiji --out kolegiji.csv  (c/kolegiji.csv?)
+2020-05-18T09:10:16.538+0000    connected to: mongodb://localhost/
+2020-05-18T09:10:16.543+0000    exported 7 records
+root@af5d31ba1b1b:/#
+
+Zasad 7 kolegija s po tri ispita (1.kolokvij, 2.kolokvij i završni)
+
+Izlaz iz bash shella:
+root@af5d31ba1b1b:/# exit
+exit
+
+Datoteka kolegiji.csv sad se nalazi u kontejneru nbp-mongo i treba je kopirati lokalno:
+U docker shellu:
+$ docker cp nbp-mongo:kolegiji.csv "C:\Users\Kristina\.docker"
+//nema povratne info -> ok 
+//(provjera da je datoteka stvarno premljena)
+
+Datoteka kolegiji.csv je spremljena lokalno na putanji iz prethodne naredbe.
+
+*** IMPORT ***
+
+Kopiranje datoteke iz lokalnog repozitorija u nbp-mongo kontejner:
+$ docker cp /Users/Kristina/.docker/kolegiji.csv nbp-mongo:/home/
+//nema povratne info -> ok
+
+Datoteka kolegiji.csv spremljena u nbp-mongo kontejner.
+Podatke iz datoteka treba ucitati u bazu (u ovom slucaju ispiti), u kolekciju (u ovom slucaju kolegiji2)
+
+Ponovo u bash shell:
+$ docker exec -it nbp-mongo bash
+root@af5d31ba1b1b:/#
+
+Kopiranje podataka u kolekciju kolegiji2 (ista baza: ispiti):
+root@af5d31ba1b1b:/# mongoimport -d ispiti -c kolegiji2 --file /home/kolegiji.csv
+2020-05-18T08:51:38.439+0000    connected to: mongodb://localhost/
+2020-05-18T08:51:38.454+0000    7 document(s) imported successfully. 0 document(s) failed to import.
+root@af5d31ba1b1b:/#
+
+root@af5d31ba1b1b:/# mongo
+> use ispiti
+switched to db ispiti
+> show collections
+kolegiji
+kolegiji2
+
+> db.kolegiji.find()
+> db.kolegiji2.find()
+*isto; ukljucujuci id-eve Objectid, ali ne znam koliko je on uopce bitan za rad aplikacije*

@@ -1,0 +1,149 @@
+///////////////////// PROSJEK NEKOG STUDENTA
+
+var mapp = function(){
+    for (var idx = 0; idx < this.kolegiji.length; idx++){
+        if( this.kolegiji[idx].ocjena == 'null' ) continue;
+
+        var key = this.jmbag;
+
+        var ocjena_int = parseInt(this.kolegiji[idx].ocjena);
+        var value = {count: 1, ocjena: ocjena_int};
+
+        emit(key, value);
+    }
+};
+
+
+
+var reducee = function(keyProdName, values){
+	reducedVal = { count: 0, rezultat: 0 };
+
+	for(var i = 0; i < values.length; i++){
+		reducedVal.count += values[i].count;
+		reducedVal.rezultat += values[i].ocjena;
+	}
+
+	return reducedVal;
+};
+
+
+
+var finalizee = function(key, reducedVal){
+	reducedVal.avg = reducedVal.rezultat/reducedVal.count;
+	return reducedVal;
+};
+
+
+
+db.studenti.mapReduce(
+   mapp,
+   reducee,
+   {
+     out: { merge: "proba2" },
+     finalize: finalizee,
+     query: { "ime": "Iva", "prezime": "Ivić" }
+   }
+ );
+
+
+
+
+//////////////// PROSJECNA OCJENA (SVAKOG) KOLEGIJA - izbaci prosjek za svaki kolegij
+
+var mapp = function(){
+    for (var idx = 0; idx < this.kolegiji.length; idx++){
+        if( this.kolegiji[idx].ocjena == 'null' ) continue;
+
+        var key = this.kolegiji[idx].isvu_sifra;
+
+        var ocjena_int = parseInt(this.kolegiji[idx].ocjena);
+        var value = {count: 1, ocjena: ocjena_int};
+
+        emit(key, value);
+    }
+};
+
+
+
+var reducee = function(keyProdName, values){
+	reducedVal = { count: 0, rezultat: 0 };
+
+	for(var i = 0; i < values.length; i++){
+		reducedVal.count += values[i].count;
+		reducedVal.rezultat += values[i].ocjena;
+	}
+
+	return reducedVal;
+};
+
+
+
+var finalizee = function(key, reducedVal){
+	reducedVal.avg = reducedVal.rezultat/reducedVal.count;
+	return reducedVal;
+};
+
+
+
+db.studenti.mapReduce(
+   mapp,
+   reducee,
+   {
+     out: { merge: "proba2" },
+     finalize: finalizee
+   }
+ );
+
+
+
+
+ //////////////// PROSJECNA OCJENA (SVAKOG) ISPITA - izbaci prosjek za svaki ispit
+
+var mapp = function(){
+    for (var idx = 0; idx < this.kolegiji.length; idx++){
+        for(var j = 0; j < this.kolegiji[idx].ispiti.length; j++){
+	        if( !this.kolegiji[idx].ispiti[j].rezultat ) continue;
+
+	        var key = this.kolegiji[idx].ispiti[j].ispit_id;
+
+            	var rezultat = this.kolegiji[idx].ispiti[j].rezultat;
+	    	var rezultat_bez_postotka = rezultat.slice(0, -1);
+            	var rezultat_broj = parseInt(rezultat_bez_postotka);
+            	var value = { count: 1, rezultat: rezultat_broj };
+
+	        emit(key, value);
+	    }
+    }
+};
+
+
+
+var reducee = function(keyProdName, values){
+	reducedVal = { count: 0, rezultat: 0 };
+
+	for(var i = 0; i < values.length; i++){
+		reducedVal.count += values[i].count;
+		reducedVal.rezultat += values[i].rezultat;
+	}
+
+	return reducedVal;
+};
+
+
+
+var finalizee = function(key, reducedVal){
+	reducedVal.avg = reducedVal.rezultat/reducedVal.count;
+	return reducedVal;
+};
+
+
+
+db.studenti.mapReduce(
+   mapp,
+   reducee,
+   {
+     out: { merge: "proba2" },
+     finalize: finalizee
+   }
+ );
+ 
